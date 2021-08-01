@@ -1,0 +1,3 @@
+files:
+  - source: Shadow/localization/en.yaml
+    translation: /**/Shadow/localization/%locale_with_underscore%.yaml
