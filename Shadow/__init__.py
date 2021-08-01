@@ -22,8 +22,8 @@ from aiogram.bot.api import TELEGRAM_PRODUCTION, TelegramAPIServer
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
 from Shadow.config import get_bool_key, get_int_key, get_list_key, get_str_key
-from Shadow.utils.logger import log
 from Shadow.services.telethon import tbot
+from Shadow.utils.logger import log
 from Shadow.versions import SHADOW_VERSION
 
 log.info("----------------------")
