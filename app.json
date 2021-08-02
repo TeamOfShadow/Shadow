@@ -1,13 +1,14 @@
 {
   "name": "Shadow",
-  "description": "?",
+  "description": "A modular telegram group management bot written with Aiogram, Pyrogram & Telethon",
+  "logo": "https://telegra.ph/file/2adf03bd079a0243aafac.png",
   "keywords": [
     "telegram",
     "Shadow",
     "plugin",
     "telegram-Shadow"
   ],
-  "repository": "https://github.com/TeamOfShadow/Shadow",
+  "repository": "https://github.com/deshadeeth-thisarana/Shadow-private",
   "website": "",
   "success_url": "t.me/GalaxyFriendsTeam",
   "buildpacks": [
