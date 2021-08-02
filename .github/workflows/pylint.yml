@@ -31,6 +31,6 @@ jobs:
           commit_message: 'Auto Fixes: Code formatted'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: DeshadeethThisarana
+          commit_user_name: Deshadeeth-Thisarana
           commit_user_email: deshadeeththisarana@gmail.com
-          commit_author: DeshadeethThisarana <deshadeeththisarana@gmail.com>
+          commit_author: Deshadeeth-Thisarana <deshadeeththisarana@gmail.com>
