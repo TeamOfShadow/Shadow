@@ -6,9 +6,8 @@ import shutil
 import cv2
 import numpy as np
 import requests
-from PIL import Image, ImageDraw, ImageOps
-
 from DaisyX.config import get_str_key
+from PIL import Image, ImageDraw, ImageOps
 
 RemoveBG_API = get_str_key("REM_BG_API_KEY", required=False)
 
