@@ -19,7 +19,7 @@
 
 > ⭐️ Thanks to everyone who starred Shadow, That is the greatest pleasure we have !
 
-## Avaiilable on Telegram as [Shadow](https://t.me/Mr_Shadow_Robot)
+## Available on Telegram as [Shadow](https://t.me/Mr_Shadow_Robot)
 
 # 🧙‍♀️ Deploy Guide
 Complete guide on deploying [Shadow's](https://t.me/Mr_Shadow_Robot) clone on Heroku.
