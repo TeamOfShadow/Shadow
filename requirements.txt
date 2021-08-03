@@ -5,7 +5,7 @@ aiogram == 2.13
 
 # DBs
 redis
-aioredis # Redis memery storage fom aiogram
+aioredis # Redis memery storage from aiogram
 pymongo
 motor
 odmantic # MongoDB ORM
@@ -70,7 +70,6 @@ bs4
 html2text
 bing_image_downloader 
 search_engine_parser
-pornhub_api
 youtube_search
 
 #Memes
