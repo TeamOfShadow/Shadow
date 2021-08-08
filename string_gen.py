@@ -14,17 +14,26 @@ except BaseException:
     os.system("pip3 install telethon")
     from telethon.sessions import StringSession
     from telethon.sync import TelegramClient
-ok = """_____ ____ ___ __ _Thunder_ __ ___ ____ _____
+ok = """
+______ _____ ____ ___ __ _ __ ___ ____ _____ ______
+|                                                 |
+| Copyright (C) 2021 @TeamOfShadow                |
+| Copyright (C) 2021 @Mr_Shadow_Robot             |
+| Copyright (C) 2020-2021 @DeshadeethThisarana    |
+|_____ _____ ____ ___ __ _ __ ___ ____ _____ _____|
+
+Enter your details here.
+After filling it check your saved messages
 """
 print(ok)
 APP_ID = int(input("Enter APP ID here: \n"))
 API_HASH = input("Enter API HASH here: \n")
 
+SHADOW_I = """THIS IS YOUR STRING SESSION"""
+SHADOW_II = """Join @ShadowBotSupport For More Support."""
+
 client = TelegramClient(StringSession(), APP_ID, API_HASH)
 with client:
     session_str = client.session.save()
-    client.send_message("me", f"`{session_str}`")
-    client.send_message(
-        "THIS IS YOUR STRING SESSION \nJoin @ShadowBotSupport For More Support."
-    )
+    client.send_message(SHADOW_I + f"`{session_str}`" + SHADOW_II)
     print("⬆ Please Check Your Telegram Saved Message For Your String.")
