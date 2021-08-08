@@ -36,6 +36,9 @@ if get_bool_key("DEBUG_MODE") is True:
     log.setLevel(logging.DEBUG)
     log.warn("! Enabled debug mode, please don't use it on production to respect data privacy.")
 
+REDIS_URI = get_str_key("REDIS_URI", required=True)
+REDIS_PORT = get_int_key("REDIS_PORT", required=True)
+REDIS_PASS = get_str_key("REDIS_PASS", required=True)
 TOKEN = get_str_key("TOKEN", required=True)
 OWNER_ID = get_int_key("OWNER_ID", required=True)
 LOGS_CHANNEL_ID = get_int_key("LOGS_CHANNEL_ID", required=True)
@@ -55,12 +58,18 @@ else:
     server = TELEGRAM_PRODUCTION
 
 # AIOGram
-bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
-storage = RedisStorage2(
-    host=get_str_key("REDIS_URI"),
-    port=get_int_key("REDIS_PORT"),
-    password=get_str_key("REDIS_PASS"),
+bot = Bot(
+    token=TOKEN, 
+    parse_mode=types.ParseMode.HTML, 
+    server=server
 )
+
+storage = RedisStorage2(
+    host=REDIS_URI,
+    port=REDIS_PORT,
+    password=REDIS_PASS,
+)
+
 dp = Dispatcher(bot, storage=storage)
 
 loop = asyncio.get_event_loop()
