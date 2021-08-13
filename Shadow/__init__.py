@@ -64,8 +64,6 @@ else:
 print("[INFO]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 
-dp = Dispatcher(bot, storage=storage)
-
 loop = asyncio.get_event_loop()
 SUPPORT_CHAT = get_str_key("SUPPORT_CHAT", required=True)
 log.debug("Getting bot info...")
