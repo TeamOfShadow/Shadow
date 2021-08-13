@@ -19,10 +19,10 @@ import aiogram
 import asyncio
 import logging
 import spamwatch
+from aiohttp import ClientSession
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.bot.api import TELEGRAM_PRODUCTION, TelegramAPIServer
-from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
 from Shadow.config import get_bool_key, get_int_key, get_list_key, get_str_key
 from Shadow.services.telethon import tbot
@@ -60,18 +60,9 @@ if url := get_str_key("BOTAPI_SERVER"):
 else:
     server = TELEGRAM_PRODUCTION
 
-# AIOGram
-bot = Bot(
-    token=TOKEN, 
-    parse_mode=types.ParseMode.HTML, 
-    server=server
-)
-
-storage = RedisStorage2(
-    host=REDIS_URI,
-    port=REDIS_PORT,
-    password=REDIS_PASS,
-)
+# Aiohttp Client
+print("[INFO]: INITIALZING AIOHTTP SESSION")
+aiohttpsession = ClientSession()
 
 dp = Dispatcher(bot, storage=storage)
 
