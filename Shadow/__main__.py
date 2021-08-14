@@ -65,7 +65,7 @@ log.info("Pyrogram: Using polling method")
 
 async def run_bot():
     """Run The Bot"""
-    await pbot.start()
+    
     if get_bool_key("LOAD_MODULES"):
         if len(LOAD) > 0:
             modules = LOAD
