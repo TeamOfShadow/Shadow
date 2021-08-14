@@ -49,7 +49,6 @@ async def before_srv_task(loop):
 async def start():
     log.debug("Starting before serving task for all modules...")
     loop.create_task(before_srv_task(loop))
-    await pbot.start()
     if not get_bool_key("DEBUG_MODE"):
         log.debug("Waiting 2 seconds...")
         await asyncio.sleep(2)
