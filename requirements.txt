@@ -1,6 +1,6 @@
 # General
-telethon==1.19.5
-pyrogram>=1.0.7
+telethon
+pyrogram
 aiogram == 2.13
 
 # DBs
