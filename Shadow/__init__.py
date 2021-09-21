@@ -58,7 +58,7 @@ else:
 
 # AIOGram
 bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML, server=server)
-storage = RedisStorage2(
+storage = RedisStorage(
     host=get_str_key("REDIS_URI"),
     port=get_int_key("REDIS_PORT"),
     password=get_str_key("REDIS_PASS"),
