@@ -107,7 +107,7 @@ Anything missing kindly let us know at [Shadow Updates](https://t.me/ShadowbotUp
 
 ## Contributors
 
-#### • Deshadeeth Thisarana »»  <a href="https://github.com/Deshadeeth-Thisarana" alt="Deshadeeth-Thisarana"> <img src="https://img.shields.io/badge/deshadeeth-thisarana-90302f?logo=github" /></a> (OWNER)
+#### • Deshadeeth Thisarana »»  <a href="https://github.com/Deshadeeth-Thisarana" alt="Deshadeeth-Thisarana"> <img src="https://img.shields.io/badge/Deshadeeth-Thisarana-90302f?logo=github" /></a> (OWNER)
 #### • Prabhasha »» <a href="https://github.com/prabhasha-p" alt="prabhasha-p"> <img src="https://img.shields.io/badge/prabhasha-p-90302f?logo=github" /></a>
 
 
