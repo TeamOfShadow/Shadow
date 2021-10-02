@@ -1,5 +1,5 @@
 # General
-telethon==1.19.5
+telethon==1.20.1
 pyrogram
 aiogram
 
