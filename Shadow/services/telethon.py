@@ -14,7 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from telethon import TelegramClient
+from telethon.sync import TelegramClient
 
 from Shadow.config import get_int_key, get_str_key
 
