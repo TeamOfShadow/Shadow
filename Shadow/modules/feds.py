@@ -50,12 +50,12 @@ from Shadow.services.mongo import db
 from Shadow.services.redis import redis
 from Shadow.services.telethon import tbot
 
-from .utils.cached import cached
-from .utils.connections import chat_connection, get_connected_chat
-from .utils.language import get_string, get_strings, get_strings_dec
-from .utils.message import get_cmd, need_args_dec
-from .utils.restrictions import ban_user, unban_user
-from .utils.user_details import (
+from Shadow.utils.cached import cached
+from Shadow.utils.connections import chat_connection, get_connected_chat
+from Shadow.utils.language import get_string, get_strings, get_strings_dec
+from Shadow.utils.message import get_cmd, need_args_dec
+from Shadow.utils.restrictions import ban_user, unban_user
+from Shadow.utils.user_details import (
     check_admin_rights,
     get_chat_dec,
     get_user_and_text,
