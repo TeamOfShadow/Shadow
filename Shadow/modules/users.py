@@ -235,7 +235,7 @@ async def get_id(message, user, strings, chat):
 
 
 @register(cmds=["adminlist", "admins"])
-@disableable_dec("adminlist", "admins")
+@disableable_dec("admins")
 @chat_connection(only_groups=True)
 @get_strings_dec("users")
 async def adminlist(message, chat, strings):
