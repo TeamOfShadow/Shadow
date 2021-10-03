@@ -8,9 +8,9 @@
     "plugin",
     "telegram-Shadow"
   ],
-  "repository": "https://github.com/deshadeeth-thisarana/Shadow-private",
+  "repository": "https://github.com/TeamOfShadow/Shadow",
   "website": "",
-  "success_url": "t.me/GalaxyFriendsTeam",
+  "success_url": "t.me/TeamOfShadow",
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
