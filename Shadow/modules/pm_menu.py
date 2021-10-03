@@ -116,7 +116,7 @@ async def help_cmd(message, strings):
     button = help_markup(MOD_HELP)
     button.add(InlineKeyboardButton(strings["back"], callback_data="go_to_start"))
     await message.reply_sticker(STICKER)
-    await message.reply_text(strings["help_header"], reply_markup=button)
+    await message.reply(strings["help_header"], reply_markup=button)
 
 
 @register(cmds="help", only_groups=True)
