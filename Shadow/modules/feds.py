@@ -51,11 +51,11 @@ from Shadow.services.redis import redis
 from Shadow.services.telethon import tbot
 
 from Shadow.utils.cached import cached
-from Shadow.utils.connections import chat_connection, get_connected_chat
-from Shadow.utils.language import get_string, get_strings, get_strings_dec
-from Shadow.utils.message import get_cmd, need_args_dec
-from Shadow.utils.restrictions import ban_user, unban_user
-from Shadow.utils.user_details import (
+from Shadow.modules.utils.connections import chat_connection, get_connected_chat
+from Shadow.modules.utils.language import get_string, get_strings, get_strings_dec
+from Shadow.modules.utils.message import get_cmd, need_args_dec
+from Shadow.modules.utils.restrictions import ban_user, unban_user
+from Shadow.modules.utils.user_details import (
     check_admin_rights,
     get_chat_dec,
     get_user_and_text,
