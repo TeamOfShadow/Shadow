@@ -1,5 +1,5 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2021 GalaxyFriendsTeam
+# Copyright (C) 2021 Shadow
 # Copyright (C) 2020 - 2021 Deshadeeth Thisarana
 
 # This file is part of Shadow (Telegram Bot)
@@ -217,7 +217,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "logs/Shadow.log"
+    input_str = "Shadow.stuff.logs.Shadow"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -235,7 +235,7 @@ async def get_event(message):
     await message.reply(event)
 
 
-@register(cmds="stats", is_op=True)
+@register(cmds="stats", is_owner=True)
 async def stats(message):
     if message.from_user.id in skemmers:
         text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
