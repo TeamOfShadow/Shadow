@@ -140,14 +140,17 @@ async def paginate_news(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("◀️", data=f"prevtorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
+                Button.inline(
+                    "◀️", data=f"prevtorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
                 ),
                 Button.inline("❌", data=f"torrentstop-{sender}|{chatid}|{msgid}"),
-                Button.inline("▶️", data=f"nexttorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
+                Button.inline(
+                    "▶️", data=f"nexttorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
                 ),
             ],
             [
-                Button.inline("Refresh 🔁", data=f"newtorrent-{sender}|{search}|{chatid}|{msgid}"
+                Button.inline(
+                    "Refresh 🔁", data=f"newtorrent-{sender}|{search}|{chatid}|{msgid}"
                 )
             ],
         ],
@@ -209,14 +212,17 @@ async def paginate_prevtorrent(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("◀️", data=f"prevtorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
+                Button.inline(
+                    "◀️", data=f"prevtorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
                 ),
                 Button.inline("❌", data=f"torrentstop-{sender}|{chatid}|{msgid}"),
-                Button.inline("▶️", data=f"nexttorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
+                Button.inline(
+                    "▶️", data=f"nexttorrent-{sender}|{search}|{num}|{chatid}|{msgid}"
                 ),
             ],
             [
-                Button.inline("Refresh 🔁", data=f"newtorrent-{sender}|{search}|{chatid}|{msgid}"
+                Button.inline(
+                    "Refresh 🔁", data=f"newtorrent-{sender}|{search}|{chatid}|{msgid}"
                 )
             ],
         ],

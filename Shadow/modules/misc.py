@@ -23,7 +23,6 @@ from contextlib import suppress
 from datetime import datetime
 
 import wikipedia
-
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from aiogram.utils.exceptions import (
     BadRequest,

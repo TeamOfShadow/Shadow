@@ -1,6 +1,6 @@
 # Ported from @MissJuliaRobot
 
-# Copyright (C) 2020-2021 @DeshadeethThisarana 
+# Copyright (C) 2020-2021 @DeshadeethThisarana
 
 
 # This file is part of Shadow (Telegram Bot)

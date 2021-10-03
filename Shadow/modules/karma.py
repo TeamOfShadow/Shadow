@@ -80,7 +80,9 @@ Send `/karma` without replying to any message to check karma list of top 10 user
 <i> Special Credits to WilliamButcherBot </i>"""
 
 
-regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|thanq|pro|cool|good|👍)$"
+regex_upvote = (
+    r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|thanq|pro|cool|good|👍)$"
+)
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 

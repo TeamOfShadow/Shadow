@@ -1,5 +1,5 @@
 ﻿# Copyright (C) 2020-2021 by @DeshadeethThisarana
-# 
+#
 # This file is a part of Shadow (Telegram bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -30,7 +30,6 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
 from Shadow import BOT_ID
-from Shadow import OWNER_ID as SUDO_USERS
 from Shadow.services.pyrogram import pbot
 from Shadow.services.sql import forceSubscribe_sql as sql
 

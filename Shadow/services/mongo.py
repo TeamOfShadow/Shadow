@@ -1,4 +1,4 @@
-# This file is part of Shadow (Telegram Bot) 
+# This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -13,15 +13,11 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import asyncio
-import sys
 
 from motor import motor_asyncio
 from odmantic import AIOEngine
 from pymongo import MongoClient
-from pymongo.errors import ServerSelectionTimeoutError
 
-from Shadow import log
 from Shadow.config import get_int_key, get_str_key
 
 MONGO_URI = get_str_key("MONGO_URI")

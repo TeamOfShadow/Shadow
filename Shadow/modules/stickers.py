@@ -228,7 +228,9 @@ async def _(event):
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
     packshortname = f"Shadow_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Shadow steal it")
+    kanga = await event.reply(
+        "Hello, This Sticker Looks Noice. Mind if Shadow steal it"
+    )
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)

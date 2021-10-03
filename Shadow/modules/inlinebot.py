@@ -316,7 +316,11 @@ async def inline_query_handler(client, query):
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [InlineKeyboardButton("Download Link", url=lemk)],
-                                [InlineKeyboardButton("Direct Download Link", url=dl_link)],
+                                [
+                                    InlineKeyboardButton(
+                                        "Direct Download Link", url=dl_link
+                                    )
+                                ],
                             ]
                         ),
                     )
