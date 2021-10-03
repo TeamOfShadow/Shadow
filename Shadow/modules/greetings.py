@@ -50,7 +50,7 @@ from Shadow.services.redis import redis
 from Shadow.services.telethon import tbot
 from Shadow.stuff.fonts import ALL_FONTS
 
-from .utils.cached import cached
+from Shadow.utils.cached import cached
 from .utils.connections import chat_connection
 from .utils.language import get_strings_dec
 from .utils.message import convert_time, need_args_dec
