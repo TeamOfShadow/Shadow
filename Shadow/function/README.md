@@ -1,5 +1,3 @@
-# Here we define functions
-
 ## Essentials
 ### Importing Pyrogram admin check
 ```python3
