@@ -62,7 +62,7 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("Get More Help.", url=f"t.me/{BOT_USERNAME}?start=start"),
+        InlineKeyboardButton("Get More Help.", url=f"t.me/{BOT_USERNAME}?start=help"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
     answerss = [
@@ -70,7 +70,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/109e8fe98acc6d262b7c6.jpg",
+            thumb_url="https://telegra.ph/file/2adf03bd079a0243aafac.png",
             reply_markup=buttons,
         )
     ]
@@ -88,7 +88,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Shadow✨](https://github.com/deshadeeth-thisarana/Shadow):**
+**[Shadow✨](https://github.com/TeamOfShadow/Shadow):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
