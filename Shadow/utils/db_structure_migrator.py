@@ -25,8 +25,8 @@ from Shadow.versions import DB_STRUCTURE_VER
 
 async def notify_bot_owner(old_ver, new_ver):
     await bot.send_message(
-      OWNER_ID,
-      f"Shadow's database structure was updated from <code>{old_ver}</code> to <code>{new_ver}</code>",
+        OWNER_ID,
+        f"Shadow's database structure was updated from <code>{old_ver}</code> to <code>{new_ver}</code>",
     )
 
 
