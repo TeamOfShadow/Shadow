@@ -68,14 +68,21 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
-        InlineKeyboardButton(strings["btn_source"], url="https://github.com/TeamOfShadow/Shadow"),
+        InlineKeyboardButton(
+            strings["btn_source"], url="https://github.com/TeamOfShadow/Shadow"
+        ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/ShadowBotUpdates"),
+        InlineKeyboardButton(
+            strings["btn_channel"], url="https://t.me/ShadowBotUpdates"
+        ),
         InlineKeyboardButton(strings["btn_group"], url="https://t.me/ShadowBotSupport"),
     )
     buttons.add(
-        InlineKeyboardButton("👸🏼 Add Shadow to your group", url=f"https://telegram.me/Mr_Shadow_Robot?startgroup=true",)
+        InlineKeyboardButton(
+            "👸🏼 Add Shadow to your group",
+            url=f"https://telegram.me/Mr_Shadow_Robot?startgroup=true",
+        )
     )
     # Handle error when user click the button 2 or more times simultaneously
     with suppress(MessageNotModified):
@@ -129,7 +136,11 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
         return
     msg = f"⚊❮❮❮❮ ｢ Help for <b>{mod}</b> module 」❯❯❯❯⚊\n"
     msg += f"{MOD_HELP[mod]}"
-    button = InlineKeyboardMarkup().add(InlineKeyboardButton(text="🔙Back", callback_data="get_help"))
+    button = InlineKeyboardMarkup().add(
+        InlineKeyboardButton(text="🔙Back", callback_data="get_help")
+    )
     with suppress(MessageNotModified):
-        await query.message.edit_text(msg, reply_markup=button, disable_web_page_preview=True)
+        await query.message.edit_text(
+            msg, reply_markup=button, disable_web_page_preview=True
+        )
         await query.answer("Help for " + mod)
