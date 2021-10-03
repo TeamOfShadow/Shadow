@@ -114,7 +114,8 @@ async def back_btn(event):
 async def help_cmd(message, strings):
     button = help_markup(MOD_HELP)
     button.add(InlineKeyboardButton(strings["back"], callback_data="go_to_start"))
-    await message.reply(strings["help_header"], reply_markup=button)
+    await message.reply_sticker(STICKER)
+    await message.reply_text(strings["help_header"], reply_markup=button)
 
 
 @register(cmds="help", only_groups=True)
@@ -134,13 +135,13 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     if not mod in MOD_HELP:
         await query.answer()
         return
-    msg = f"⚊❮❮❮❮ ｢ Help for <b>{mod}</b> module 」❯❯❯❯⚊\n"
+    msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text="🔙Back", callback_data="get_help")
     )
     with suppress(MessageNotModified):
-        await query.message.edit_text(
+        await query.message.edit(
             msg, reply_markup=button, disable_web_page_preview=True
         )
         await query.answer("Help for " + mod)
