@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
+# Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
+
 # Copyright (C) 2020 - 2021 Shadow
 # Copyright (C) 2020 - 2021 Deshadeeth Thisarana
 
@@ -142,6 +143,6 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     )
     with suppress(MessageNotModified):
         await query.message.edit(
-            msg, reply_markup=button, disable_web_page_preview=True
+            msg, reply_markup=button, disable_web_page_preview=True, parse_mode="markdown"
         )
         await query.answer("Help for " + mod)
