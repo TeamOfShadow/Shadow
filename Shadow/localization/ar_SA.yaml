@@ -180,22 +180,22 @@ STRINGS:
     #/disableable
     disablable: "<b>الأوامر القابلة للتعطيل:</b>\n"
     #/disabled
-    no_disabled_cmds: لا توجد أوامر معطلة في <b>{chat_name}</b>!
-    disabled_list: "<b>الأوامر المعطلة في {chat_name}:</b>\n"
+    no_disabled_cmds: لا توجد أوامر معطلة في <b>{chatname}</b>!
+    disabled_list: "<b>الأوامر المعطلة في {chatname}:</b>\n"
     #/disable
     wot_to_disable: "ما الذي تريد تعطيله؟"
     already_disabled: "هذا الأمر معطل بالفعل!"
-    disabled: "الأمر <code>{cmd}</code> تم تعطيله في <b>{chat_name}</b>!"
+    disabled: "الأمر <code>{cmd}</code> تم تعطيله في <b>{chatname}</b>!"
     #/enable
     wot_to_enable: "ما الذي تريد تفعيله؟"
     already_enabled: "هذا الأمر غير معطل!"
-    enabled: "تم تمكين الأمر <code>{cmd}</code> في <b>{chat_name}</b>!"
+    enabled: "تم تمكين الأمر <code>{cmd}</code> في <b>{chatname}</b>!"
     #/enableall
     not_disabled_anything: "لم يتم تعطيل أي شيء في <b>{chat_title}</b>!"
-    enable_all_text: "This will enable all commands in the <b>{chat_name}</b>. Are you sure?"
+    enable_all_text: "This will enable all commands in the <b>{chatname}</b>. Are you sure?"
     enable_all_btn_yes: "نعم. تمكين جميع الأوامر!"
     enable_all_btn_no: "لا!"
-    enable_all_done: "تم تمكين جميع الأوامر (<code>{num}</code>) في <b>{chat_name}</b>!"
+    enable_all_done: "تم تمكين جميع الأوامر (<code>{num}</code>) في <b>{chatname}</b>!"
   bot_rights:
     change_info: "ليس لدي حقوق في تغيير معلومات المجموعة، من فضلك أجعلني مشرفا بهذا الاذن."
     edit_messages: "ليس لدي الاذن في تحرير الرسائل!"
