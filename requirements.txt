@@ -27,6 +27,7 @@ python-rapidjson
 PyYAML>5.0
 coloredlogs
 loguru
+contextlib
 babel
 captcha
 async-timeout
