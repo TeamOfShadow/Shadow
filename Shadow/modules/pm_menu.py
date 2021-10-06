@@ -18,6 +18,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import random
 from contextlib import suppress
 
 from aiogram.types.inline_keyboard import InlineKeyboardButton, InlineKeyboardMarkup
@@ -44,7 +45,12 @@ def help_markup(modules):
     return markup
 
 
-STICKER = "CAACAgUAAxkBAAI6HWEDnGOlu5qzBUlxRfTiGwKwdY0pAAIiAwAC7r9gVq1dAAFYjq9xPyAE"
+STICKERS = random.choice("CAACAgUAAxkBAAICz2FdTtLtcwSkeRvaGYVMtqUD9bqOAAIRBAACsqXhVi5n-AsTE5aJHgQ",
+                         "CAACAgUAAxkBAAIC0GFdTt0CB0n-5P2M0nox0ND-wFivAAJVAwACUaToVjA7G67xgpIVHgQ",
+                         "CAACAgUAAxkBAAIC0WFdTusFr5LAmImCSfF2ZEdWy9I2AAK-BAACJmvoVtrywEXPjxGEHgQ",
+                         "CAACAgUAAxkBAAIC0mFdTvg2lQZLX3yQ8u2cfx99CusnAALNAwACUWzgVuYmv6itR5KaHgQ",
+                         "CAACAgUAAxkBAAIC-WFdVjyol-GEW3FPGGDl5BL31bPNAAJtAwACriDpVlaWbhzIO2kWHgQ",
+                         "CAACAgUAAxkBAAIC-GFdVjbcl1L2K7toxZpCOOVKA0GoAALuAwACprvpVkp3sA_NBVgWHgQ")
 
 
 @register(cmds="start", no_args=True, only_groups=True)
@@ -56,7 +62,7 @@ async def start_group_cmd(message, strings):
 
 @register(cmds="start", no_args=True, only_pm=True)
 async def start_cmd(message):
-    await message.reply_sticker(STICKER)
+    await message.reply_sticker(STICKERS)
     await get_start_func(message)
 
 
@@ -66,24 +72,19 @@ async def get_start_func(message, strings, edit=False):
 
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
-    buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
+    buttons.add(
+        InlineKeyboardButton(strings["btn_help"], callback_data="get_help")
+    )
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
-        InlineKeyboardButton(
-            strings["btn_source"], url="https://github.com/TeamOfShadow/Shadow"
-        ),
+        InlineKeyboardButton(strings["btn_source"], url="https://github.com/TeamOfShadow/Shadow")
     )
     buttons.add(
-        InlineKeyboardButton(
-            strings["btn_channel"], url="https://t.me/ShadowBotUpdates"
-        ),
-        InlineKeyboardButton(strings["btn_group"], url="https://t.me/ShadowBotSupport"),
+        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/ShadowBotUpdates"),
+        InlineKeyboardButton(strings["btn_group"], url="https://t.me/ShadowBotSupport")
     )
     buttons.add(
-        InlineKeyboardButton(
-            "👸🏼 Add Shadow to your group",
-            url=f"https://telegram.me/Mr_Shadow_Robot?startgroup=true",
-        )
+        InlineKeyboardButton("➕ Add Shadow to your group ➕", url=f"https://telegram.me/Mr_Shadow_Robot?startgroup=true")
     )
     # Handle error when user click the button 2 or more times simultaneously
     with suppress(MessageNotModified):
@@ -115,7 +116,7 @@ async def back_btn(event):
 async def help_cmd(message, strings):
     button = help_markup(MOD_HELP)
     button.add(InlineKeyboardButton(strings["back"], callback_data="go_to_start"))
-    await message.reply_sticker(STICKER)
+    await message.reply_sticker(STICKERS)
     await message.reply(strings["help_header"], reply_markup=button)
 
 
@@ -124,9 +125,7 @@ async def help_cmd(message, strings):
 @get_strings_dec("pm_menu")
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
-    button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/Mr_Shadow_Robot?start=help")
-    )
+    button = InlineKeyboardMarkup().add(InlineKeyboardButton(text=text, url="https://t.me/Mr_Shadow_Robot?start=help"))
     await message.reply(strings["help_header"], reply_markup=button)
 
 
@@ -138,9 +137,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
         return
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
-    button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="🔙Back", callback_data="get_help")
-    )
+    button = InlineKeyboardMarkup().add(InlineKeyboardButton(text="🔙Back", callback_data="get_help"))
     with suppress(MessageNotModified):
         await query.message.edit_text(
             msg,
