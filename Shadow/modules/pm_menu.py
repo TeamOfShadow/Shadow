@@ -44,14 +44,16 @@ def help_markup(modules):
         )
     return markup
 
+
 STICKERS = (
     "CAACAgUAAxkBAAIDPmFdrtdKL1wpUzLNpCUfcqK-pbkwAAKbBAACgSHoVgdJ3n3-7qLmHgQ",
     "CAACAgUAAxkBAAIDPWFdru8XofWwx-rqfBMkW79YImgXAALNAwACUWzgVuYmv6itR5KaHgQ",
     "CAACAgUAAxkBAAIDPGFdrv1FrmAU4jO_WOQAAWl1ct23LAACvgQAAiZr6Fba8sBFz48RhB4E",
     "CAACAgUAAxkBAAIDO2FdrymTK7_8xIhz16JVfTQdIb83AALuAwACprvpVkp3sA_NBVgWHgQ",
     "CAACAgUAAxkBAAIDOmFdrza48kuxEtJUeR2G6-A1nT4RAAJVAwACUaToVjA7G67xgpIVHgQ",
-    "CAACAgUAAxkBAAIDOWFdr0AUlj9duTsga4yqZYSPQXRFAAIRBAACsqXhVi5n-AsTE5aJHgQ"
+    "CAACAgUAAxkBAAIDOWFdr0AUlj9duTsga4yqZYSPQXRFAAIRBAACsqXhVi5n-AsTE5aJHgQ",
 )
+
 
 @register(cmds="start", no_args=True, only_groups=True)
 @disableable_dec("start")
