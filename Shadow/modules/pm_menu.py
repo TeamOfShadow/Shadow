@@ -44,16 +44,14 @@ def help_markup(modules):
         )
     return markup
 
-
 STICKERS = (
-    "CAACAgUAAxkBAAICz2FdTtLtcwSkeRvaGYVMtqUD9bqOAAIRBAACsqXhVi5n-AsTE5aJHgQ",
-    "CAACAgUAAxkBAAIC0GFdTt0CB0n-5P2M0nox0ND-wFivAAJVAwACUaToVjA7G67xgpIVHgQ",
-    "CAACAgUAAxkBAAIC0WFdTusFr5LAmImCSfF2ZEdWy9I2AAK-BAACJmvoVtrywEXPjxGEHgQ",
-    "CAACAgUAAxkBAAIC0mFdTvg2lQZLX3yQ8u2cfx99CusnAALNAwACUWzgVuYmv6itR5KaHgQ",
-    "CAACAgUAAxkBAAIC-WFdVjyol-GEW3FPGGDl5BL31bPNAAJtAwACriDpVlaWbhzIO2kWHgQ",
-    "CAACAgUAAxkBAAIDKWFdrVk6Ffo_7GqArln0idBM11vrAAKbBAACgSHoVgdJ3n3-7qLmHgQ",
+    "CAACAgUAAxkBAAIDPmFdrtdKL1wpUzLNpCUfcqK-pbkwAAKbBAACgSHoVgdJ3n3-7qLmHgQ",
+    "CAACAgUAAxkBAAIDPWFdru8XofWwx-rqfBMkW79YImgXAALNAwACUWzgVuYmv6itR5KaHgQ",
+    "CAACAgUAAxkBAAIDPGFdrv1FrmAU4jO_WOQAAWl1ct23LAACvgQAAiZr6Fba8sBFz48RhB4E",
+    "CAACAgUAAxkBAAIDO2FdrymTK7_8xIhz16JVfTQdIb83AALuAwACprvpVkp3sA_NBVgWHgQ",
+    "CAACAgUAAxkBAAIDOmFdrza48kuxEtJUeR2G6-A1nT4RAAJVAwACUaToVjA7G67xgpIVHgQ",
+    "CAACAgUAAxkBAAIDOWFdr0AUlj9duTsga4yqZYSPQXRFAAIRBAACsqXhVi5n-AsTE5aJHgQ"
 )
-
 
 @register(cmds="start", no_args=True, only_groups=True)
 @disableable_dec("start")
