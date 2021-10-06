@@ -45,7 +45,7 @@ def help_markup(modules):
     return markup
 
 
-STICKERS = random.choice(
+STICKERS = (
     "CAACAgUAAxkBAAICz2FdTtLtcwSkeRvaGYVMtqUD9bqOAAIRBAACsqXhVi5n-AsTE5aJHgQ",
     "CAACAgUAAxkBAAIC0GFdTt0CB0n-5P2M0nox0ND-wFivAAJVAwACUaToVjA7G67xgpIVHgQ",
     "CAACAgUAAxkBAAIC0WFdTusFr5LAmImCSfF2ZEdWy9I2AAK-BAACJmvoVtrywEXPjxGEHgQ",
@@ -64,7 +64,7 @@ async def start_group_cmd(message, strings):
 
 @register(cmds="start", no_args=True, only_pm=True)
 async def start_cmd(message):
-    await message.reply_sticker(STICKERS)
+    await message.reply_sticker(random.choice(STICKERS))
     await get_start_func(message)
 
 
@@ -123,7 +123,7 @@ async def back_btn(event):
 async def help_cmd(message, strings):
     button = help_markup(MOD_HELP)
     button.add(InlineKeyboardButton(strings["back"], callback_data="go_to_start"))
-    await message.reply_sticker(STICKERS)
+    await message.reply_sticker(random.choice(STICKERS))
     await message.reply(strings["help_header"], reply_markup=button)
 
 
