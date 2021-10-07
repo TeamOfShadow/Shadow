@@ -442,7 +442,7 @@ async def inuka(client, message):
         return
 
 
-@daisyx.on_message(
+@shadow.on_message(
     filters.regex("Shadow|shadow")
     & ~filters.bot
     & ~filters.via_bot
