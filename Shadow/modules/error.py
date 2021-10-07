@@ -112,8 +112,11 @@ async def all_errors_handler(update: Update, error):
         log.error("Conn/API error detected", exc_info=error)
         return True
 
-    text = "<b>Sorry, I encountered a error!</b>\n"
-    text += f"<code>{html.escape(err_tlt, quote=False)}: {html.escape(err_msg, quote=False)}</code>"
+    text = "<b>Sorry, I found a error!</b>\n\n"
+    text += "<b>Forward this to @ShadowSupport_Official</b>\n\n"
+    text += "<i>-----------Starting Crash Log------------<i>\n"
+    text += f"<code>{html.escape(err_tlt, quote=False)}: {html.escape(err_msg, quote=False)}</code>\n"
+    text += "<i>-----------Finishing Crash Log-----------</i>"
     redis.set(chat_id, str(error), ex=600)
     await bot.send_message(chat_id, text)
 
