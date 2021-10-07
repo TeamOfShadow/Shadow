@@ -17,24 +17,23 @@
 
 
 import re
-
 import emoji
-
-IBM_WATSON_CRED_URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/bd6b59ba-3134-4dd4-aff2-49a79641ea15"
-IBM_WATSON_CRED_PASSWORD = "UQ1MtTzZhEsMGK094klnfa-7y_4MCpJY1yhd52MXOo3Y"
-url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
-
 import aiohttp
 import requests
-from DaisyX import BOT_ID
+
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
+from Shadow import BOT_ID
 from Shadow.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
 from Shadow.db.mongo_helpers.kuki import is_kuki_on, kuki_off, kuki_on
 from Shadow.function.inlinehelper import arq
 from Shadow.function.pluginhelpers import admins_only, edit_or_reply
 from Shadow.services.pyrogram import pbot as shadow
+
+IBM_WATSON_CRED_URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/bd6b59ba-3134-4dd4-aff2-49a79641ea15"
+IBM_WATSON_CRED_PASSWORD = "UQ1MtTzZhEsMGK094klnfa-7y_4MCpJY1yhd52MXOo3Y"
+url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
 translator = google_translator()
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -70,7 +69,7 @@ en_chats = []
 # AI Chat (C) 2020-2021 by @DeshadeethThisarana
 
 """
-@daisyx.on_message(
+@shadow.on_message(
     filters.voice & filters.reply & ~filters.bot & ~filters.via_bot & ~filters.forwarded,
     group=2,
 )
