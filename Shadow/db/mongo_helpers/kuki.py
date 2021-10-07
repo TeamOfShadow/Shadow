@@ -1,7 +1,6 @@
-from Shadow.services.mongo2 import db
+from Shadow.services.mongo2 import mongo_client
 
-kukidb = db
-
+kukidb = mongo_client.kuki
 
 async def is_kuki_on(chat_id: int) -> bool:
     chat = await kukidb.find_one({"chat_id": chat_id})
