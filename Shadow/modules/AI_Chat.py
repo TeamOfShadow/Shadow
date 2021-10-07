@@ -17,6 +17,7 @@
 
 
 import re
+
 import emoji
 
 IBM_WATSON_CRED_URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/bd6b59ba-3134-4dd4-aff2-49a79641ea15"
@@ -24,22 +25,20 @@ IBM_WATSON_CRED_PASSWORD = "UQ1MtTzZhEsMGK094klnfa-7y_4MCpJY1yhd52MXOo3Y"
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
 import aiohttp
-from googletrans import Translator as google_translator
-from pyrogram import filters
 import requests
 from DaisyX import BOT_ID
+from googletrans import Translator as google_translator
+from pyrogram import filters
+
 from Shadow.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
+from Shadow.db.mongo_helpers.kuki import is_kuki_on, kuki_off, kuki_on
 from Shadow.function.inlinehelper import arq
 from Shadow.function.pluginhelpers import admins_only, edit_or_reply
 from Shadow.services.pyrogram import pbot as shadow
-from Shadow.db.mongo_helpers.kuki import kuki_off, kuki_on, is_kuki_on
+
 translator = google_translator()
-from pyrogram.types import (
-  InlineKeyboardButton,
-  InlineKeyboardMarkup, 
-  Message, 
-  User, 
-)
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
 
 async def lunaQuery(query: str, user_id: int):
     luna = await arq.luna(query, user_id)
@@ -102,6 +101,7 @@ async def hmm(client, message):
         await client.send_message(message, r)
 """
 
+
 @shadow.on_callback_query(filters.regex(pattern=r"^kuki$"))
 async def _heldp(b, cb):
     chat_id = cb.message.chat.id
@@ -111,7 +111,9 @@ async def _heldp(b, cb):
     await kuki_on(chat_id)
     await cb.message.edit(
         f"Enabled Kuki AI chatbot on this group\n\n`Kuki is smart, powerful, cute and intelligent. Reply to any of Shadow's messages to enjoy chatbot service`"
-    ) 
+    )
+
+
 @shadow.on_callback_query(filters.regex(pattern=r"^acobot$"))
 async def acoo(b, cb):
     chat_id = cb.message.chat.id
@@ -121,32 +123,39 @@ async def acoo(b, cb):
         pass
     await cb.message.edit(
         f"Enabled Aco chatbot on this group. \n\n`Aco based chatbot in Shadow is simple but powerful chatbot powered by acobot.ai. Support large number of languages and clever on problem solving. Reply to any of Shadow's messages to enjoy chatbot service`"
-    ) 
-    
+    )
+
+
 @shadow.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
 async def hmm(_, message):
     global daisy_chats
-    button = [[InlineKeyboardButton(text = 'Acobot', callback_data = "acobot"),InlineKeyboardButton(text = 'Kuki', callback_data = "kuki")]]
+    button = [
+        [
+            InlineKeyboardButton(text="Acobot", callback_data="acobot"),
+            InlineKeyboardButton(text="Kuki", callback_data="kuki"),
+        ]
+    ]
     if len(message.command) != 2:
         if await is_kuki_on(message.chat.id):
-            actv="Kuki"
+            actv = "Kuki"
         elif get_session(int(message.chat.id)):
-            actv="Acobot"
+            actv = "Acobot"
         else:
-            actv="No"
-            
+            actv = "No"
+
         await message.reply_text(
-            f"{actv} AI Chatbot currently active for users in this group\nClick any button to change chatbot service",reply_markup = InlineKeyboardMarkup(button)
+            f"{actv} AI Chatbot currently active for users in this group\nClick any button to change chatbot service",
+            reply_markup=InlineKeyboardMarkup(button),
         )
         return
-        
+
     status = message.text.split(None, 1)[1]
     chat_id = message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        
+
         lel = await edit_or_reply(message, "`Processing...`")
         if chat_id in en_chats:
             en_chats.remove(chat_id)
@@ -154,18 +163,22 @@ async def hmm(_, message):
             return await lel.edit("Kuki Ai chatbot already active on this group")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Shadow AI Already Activated In This Chat\nClick any button to change chatbot service",reply_markup = InlineKeyboardMarkup(button))
+            await lel.edit(
+                "Shadow AI Already Activated In This Chat\nClick any button to change chatbot service",
+                reply_markup=InlineKeyboardMarkup(button),
+            )
             return
         await lel.edit(
-            f"Shadow's Acobot based AI Successfully Added For Users In this chat\nClick any button to change chatbot service",reply_markup = InlineKeyboardMarkup(button)
+            f"Shadow's Acobot based AI Successfully Added For Users In this chat\nClick any button to change chatbot service",
+            reply_markup=InlineKeyboardMarkup(button),
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if chat_id in en_chats:
-            en_chats.remove(chat_id)        
-        if not Escobar and  not await is_kuki_on(message.chat.id):
+            en_chats.remove(chat_id)
+        if not Escobar and not await is_kuki_on(message.chat.id):
             await lel.edit("Shadow AI Was Not Activated In This Chat")
             return
         await kuki_off(chat_id)
@@ -185,9 +198,7 @@ async def hmm(_, message):
         if not Escobar:
             pass
         await kuki_on(chat_id)
-        await message.reply_text(
-            f"Enabled Kuki AI chatbot on this group"
-        )
+        await message.reply_text(f"Enabled Kuki AI chatbot on this group")
     elif status == "acobot" or status == "aco":
         await kuki_off(chat_id)
         lol = add_chat(int(message.chat.id))
@@ -195,17 +206,18 @@ async def hmm(_, message):
             pass
         await message.reply_text(
             f"Enabled Aco chatbot on this group. Visit Acobot.ai for more info"
-        )     
+        )
     else:
         if await is_kuki_on(message.chat.id):
-            actv="Kuki"
+            actv = "Kuki"
         if get_session(int(message.chat.id)):
-            actv="Acobot"
+            actv = "Acobot"
         else:
-            actv="No"
-            
+            actv = "No"
+
         await message.reply_text(
-            f"{actv} AI Chatbot currently active for users in this group\nClick any button to change chatbot service",reply_markup = InlineKeyboardMarkup(button)
+            f"{actv} AI Chatbot currently active for users in this group\nClick any button to change chatbot service",
+            reply_markup=InlineKeyboardMarkup(button),
         )
 
 
@@ -222,7 +234,7 @@ async def hmm(client, message):
     if not get_session(int(message.chat.id)):
         if not await is_kuki_on(message.chat.id):
             return
-        #print("kuki action")
+        # print("kuki action")
         if not message.reply_to_message:
             return
         try:
@@ -236,7 +248,9 @@ async def hmm(client, message):
         if msg.startswith("/") or msg.startswith("@"):
             message.continue_propagation()
         try:
-            Kuki = requests.get(f"https://kuki-api.tk/api/ShadowRobot/DeshadeethThisarana/message={msg}").json()
+            Kuki = requests.get(
+                f"https://kuki-api.tk/api/ShadowRobot/DeshadeethThisarana/message={msg}"
+            ).json()
         except:
             return
         moezilla = f"{Kuki['reply']}"
@@ -273,7 +287,9 @@ async def hmm(client, message):
         response = response.replace("Luna", "Shadow")
         response = response.replace("luna", "Shadow")
         response = response.replace("Aco", "Shadow")
-        response = response.replace("I made myself", "Shadow is developed with ❤️ by @TeamOfShadow")
+        response = response.replace(
+            "I made myself", "Shadow is developed with ❤️ by @TeamOfShadow"
+        )
         pro = response
         try:
             await shadow.send_chat_action(message.chat.id, "typing")
@@ -335,7 +351,7 @@ async def hmm(client, message):
         response = response.replace("Aco", "Shadow")
         response = response.replace("aco", "Shadow")
         response = response.replace("Luna", "Shadow")
-        response = response.replace("luna", "Shadow")        
+        response = response.replace("luna", "Shadow")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -356,10 +372,10 @@ async def hmm(client, message):
 async def inuka(client, message):
     msg = message.text
     try:
-      if msg.startswith("/") or msg.startswith("@"):
-          message.continue_propagation()
+        if msg.startswith("/") or msg.startswith("@"):
+            message.continue_propagation()
     except:
-      return 
+        return
     u = msg.split()
     emj = extract_emojis(msg)
     msg = msg.replace(emj, "")
@@ -404,11 +420,13 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits >> @InukaASiTH
-    
+
     test = test.replace("shadow", "Aco")
     test = test.replace("Shadow", "Aco")
     try:
-        response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
+        response = await lunaQuery(
+            test, message.from_user.id if message.from_user else 0
+        )
     except:
         return message.continue_propagation()
     response = response.replace("Aco", "Shadow")
@@ -484,7 +502,9 @@ async def inuka(client, message):
     test = test.replace("shadow", "Aco")
     test = test.replace("Shadow", "Aco")
     try:
-        response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
+        response = await lunaQuery(
+            test, message.from_user.id if message.from_user else 0
+        )
     except:
         return message.continue_propagation()
     response = response.replace("Aco", "Shadow")
@@ -503,7 +523,6 @@ async def inuka(client, message):
         await message.reply_text(pro)
     except:
         return
-
 
 
 def extract_emojis(s):
