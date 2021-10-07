@@ -1,6 +1,6 @@
 from Shadow.services.mongo2 import db
 
-kukidb = db.kuki
+kukidb = db
 
 
 async def is_kuki_on(chat_id: int) -> bool:
