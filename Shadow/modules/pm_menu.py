@@ -154,6 +154,6 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
             msg,
             reply_markup=button,
             disable_web_page_preview=True,
-            parse_mode="markdown",
+            parse_mode="html",
         )
         await query.answer("Help for " + mod)
