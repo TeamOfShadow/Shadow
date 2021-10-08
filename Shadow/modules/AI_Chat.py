@@ -17,10 +17,10 @@
 
 
 import re
-
 import aiohttp
 import emoji
 import requests
+
 from googletrans import Translator as google_translator
 from pyrogram import filters
 
@@ -529,16 +529,15 @@ def extract_emojis(s):
 
 
 __help__ = """
-<b> Chatbot </b>
-<i>SHADOW AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES<i>
+<b><i>SHADOW AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES</i></b>
 
- - `/chatbot`: Select the AI Chat mode (EXCLUSIVE)
- - `/chatbot EN`: Enables English only chatbot
+<b>Chatbot</b>
+ - /chatbot: Select the AI Chat mode (EXCLUSIVE)
+ - /chatbot EN: Enables English only chatbot
  
- 
-<b> Assistant </b>
- - `/shadow [question]`: Ask question from Shadow
- - `/shadow [reply to voice note]`: Get voice reply
+<b>Assistant</b>
+ - /shadow [question]: Ask question from Shadow
+ - /shadow [reply to voice note]: Get voice reply
  """
 
 __mod_name__ = "AI Assistant"
