@@ -1,6 +1,5 @@
 ﻿# Copyright (C) 2020-2021 @DeshadeethThisarana
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
