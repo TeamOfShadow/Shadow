@@ -1,5 +1,4 @@
-# Copyright (C) 2021 GalaxyFriendsTeam
-
+# Copyright (C) 2021 TeamOfShadow 
 
 # This file is part of Shadow (Telegram Bot)
 
@@ -18,7 +17,7 @@
 
 __mod_name__ = "Auto Filters"
 __help__ = """
-<b> AUTO FILTERS </b>
+<b>AUTO FILTERS</b>
 Shadow Can filter content of a given channel automatically
 Currently support:
      - Videos
@@ -26,17 +25,18 @@ Currently support:
      - Documents
      - Music
 
-<b> Setting up </b>
+<b>Setting up</b>
 1) Add <b>@Mr_Shadow_Robot</b> to your channel
 2) Make bot admin with full permissions
 2) Go back to your group
 
-<b> Commands </b>
-- `/autofilter [Channel Username]` : Add given channel to autofiltering
-- `/autofilterdel [Channel Username]` : Remove given channel from auto filtering
-- `/autofilterdelall` : Remove all channels from automatic filtering
-- `/autofiltersettings` : Show settings panel about auto filtering channels
+<b>Commands</b>
+- /autofilter <code>[Channel Username]</code> : Add given channel to autofiltering
+- /autofilterdel <code>[Channel Username]</code> : Remove given channel from auto filtering
+- /autofilterdelall : Remove all channels from automatic filtering
+- /autofiltersettings : Show settings panel about auto filtering channels
 
-<i> Inspired by `https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2` </i>
-Original work is done by @CrazyBotsz
+<i>Inspired by <code>https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2</code></i>
+
+<b>Original work is done by @CrazyBotsz</b>
 """
