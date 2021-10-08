@@ -1,6 +1,7 @@
 # Copyright (C) @chsaiujwal 2020-2021
+
 # Edited by TeamOfShadow
-#
+
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -63,6 +64,6 @@ async def _(event):
     for match in result:
         Sed += match.get_text() + "\n\n"
     await event.reply(
-        f"<b><u>Match information gathered successfully</b></u>\n\n\n<code>{Sed}</code>",
+        f"<b><u>Match information gathered successfully</b></u>\n\n<code>{Sed}</code>",
         parse_mode="HTML",
     )
