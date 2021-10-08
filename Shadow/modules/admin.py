@@ -105,55 +105,55 @@ Make it easy to admins for manage users and groups with the admin module!
 
 <b>Available commands:</b>
 
-<b> Admin List </b>
-- `/adminlist`: Shows all admins of the chat.*
-- `/admincache`: Update the admin cache, to take into account new admins/admin permissions.*
+<b>Admin List</b>
+- /adminlist: Shows all admins of the chat.
+- /admincache: Update the admin cache, to take into account new admins/admin permissions.
 
-<b> Mutes </b>
-- `/mute`: mute a user
-- `/unmute`: unmutes a user
-- `/tmute [entity]`: temporarily mutes a user for the time interval.
-- `/unmuteall`: Unmute all muted members
+<b>Mutes</b>
+- /mute: mute a user
+- /unmute: unmutes a user
+- /tmute <code>[entity]</code>: temporarily mutes a user for the time interval.
+- /unmuteall: Unmute all muted members
 
-<b> Bans & Kicks </b>
-- `/ban`: bans a user
-- `/tban [entity]`: temporarily bans a user for the time interval.
-- `/unban`: unbans a user
-- `/unbanall`: Unban all banned members
-- `/banme`: Bans you
-- `/kick`: kicks a user
-- `/kickme`: Kicks you
+<b>Bans & Kicks</b>
+- /ban: bans a user
+- /tban <code>[entity]</code>: temporarily bans a user for the time interval.
+- /unban: unbans a user
+- /unbanall: Unban all banned members
+- /banme: Bans you
+- /kick: kicks a user
+- /kickme: Kicks you
 
-<b> Promotes & Demotes</b>
-- `/promote (user) (?admin's title)`: Promotes the user to admin
-- `/demote (user)`: Demotes the user from admin
-- `/lowpromote`: Promote a member with low rights
-- `/midpromote`: Promote a member with mid rights
-- `/highpromote`: Promote a member with max rights
-- `/lowdemote`: Demote an admin to low permissions
-- `/middemote`: Demote an admin to mid permissions
+<b>Promotes & Demotes</b>
+- /promote <code>(user) (?admin's title)</code>: Promotes the user to admin
+- /demote <code>(user)</code>: Demotes the user from admin
+- /lowpromote: Promote a member with low rights
+- /midpromote: Promote a member with mid rights
+- /highpromote: Promote a member with max rights
+- /lowdemote: Demote an admin to low permissions
+- /middemote: Demote an admin to mid permissions
 
-<b> Cleaner/Purges </b>
-- `/purge`: deletes all messages from the message you replied to
-- `/del`: deletes the message replied to
-- `/zombies`: counts the number of deleted account in your group
-- `/kickthefools`: Kick inactive members from group (one week)
+<b>Cleaner/Purges</b>
+- /purge: deletes all messages from the message you replied to
+- /del: deletes the message replied to
+- /zombies: counts the number of deleted account in your group
+- /kickthefools: Kick inactive members from group (one week)
 
-<b> User Info </b>
-- `/info`: Get user's info
-- `/users`: Get users list of group
-- `/spwinfo`: Check user's spam info from intellivoid's Spamprotection service
-- `/whois`: Gives user's info like pyrogram
+<b>User Info</b>
+- /info: Get user's info
+- /users: Get users list of group
+- /spwinfo: Check user's spam info from intellivoid's Spamprotection service
+- /whois: Gives user's info like pyrogram
 
-<b> Other </b>
-- `/invitelink`: Get chat's invite link
-- `/settitle [entity] [title]`: sets a custom title for an admin. If no `[title]` provided defaults to "Admin"
-- `/setgrouptitle [text]`: set group title
-- `/setgrouppic`: reply to an image to set as group photo
-- `/setdescription`: Set group description
-- `/setsticker`: Set group sticker
+<b>Other</b>
+- /invitelink: Get chat's invite link
+- /settitle <code>[entity] [title]</code>: Sets a custom title for an admin. If no <code>[title]</code> provided defaults to "Admin"
+- /setgrouptitle <code>[text]</code>: Set group title
+- /setgrouppic: reply to an image to set as group photo
+- /setdescription: Set group description
+- /setsticker: Set group sticker
 
 <b>Note:</b>
 Sometimes, you promote or demote an admin manually, and Shadow doesn't realise it immediately. This is because to avoid spamming telegram servers, admin status is cached locally.
-This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the `/admincache` command; that'll force Shadow to check who the admins are again.
+This means that you sometimes have to wait a few minutes for admin rights to update. If you want to update them immediately, you can use the <code>/admincache</code> command; that'll force Shadow to check who the admins are again.
 """
