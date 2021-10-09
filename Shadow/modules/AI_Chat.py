@@ -533,11 +533,11 @@ __help__ = """
 
 <b>Chatbot</b>
  - /chatbot: Select the AI Chat mode (EXCLUSIVE)
- - /chatbot EN: Enables English only chatbot
+ - /chatbot <code>EN</code>: Enables English only chatbot
  
 <b>Assistant</b>
- - /shadow [question]: Ask question from Shadow
- - /shadow [reply to voice note]: Get voice reply
+ - /shadow <code>[question]</code>: Ask question from Shadow
+ - /shadow <code>[reply to voice note]</code>: Get voice reply
  """
 
 __mod_name__ = "AI Assistant"
