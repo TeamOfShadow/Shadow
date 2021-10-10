@@ -85,7 +85,9 @@ async def get_start_func(message, strings, edit=False):
         InlineKeyboardButton(
             strings["btn_channel"], url="https://t.me/ShadowBotUpdates"
         ),
-        InlineKeyboardButton(strings["btn_group"], url="https://t.me/ShadowSupport_Official"),
+        InlineKeyboardButton(
+            strings["btn_group"], url="https://t.me/ShadowSupport_Official"
+        ),
     )
     buttons.add(
         InlineKeyboardButton(
