@@ -16,9 +16,9 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import datetime
-from typing import List
-
 import requests
+
+from typing import List
 from telethon import types
 from telethon.tl import functions
 
@@ -129,6 +129,6 @@ async def _(event):
 
 _mod_name_ = "Date Time"
 _help_ = """
- - `/datetime [timezone]`: Get the present date and time information
+ - /datetime [timezone]: Get the present date and time information
 **You can check out this [link](https://timezonedb.com/time-zones) for the available timezones**
 """
