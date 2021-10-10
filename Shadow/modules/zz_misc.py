@@ -21,57 +21,57 @@ An "odds and ends" module for small, simple commands which don't really fit anyw
 <b>Available commands:</b>
 
 <b>BASIC</b>
-- `/github (username)`: Returns info about a GitHub user or organization.
-- `/wiki (keywords)`: Get wikipedia articles just using this bot.
-- `/imdb`: Search for a movie
-- `/cancel`: Disables current state. Can help in cases if @Mr_Shadow_Robot not responing on your message.
-- `/id`: get the current group id. If used by replying to a message, gets that user's id.
-- `/info`: get information about a user.
-- `/paste`: Pase the text/file in nekobin
-- `/gps`: Find a location
+- /github <code>(username)</code>: Returns info about a GitHub user or organization.
+- /wiki <code>(keywords)</code>: Get wikipedia articles just using this bot.
+- /imdb: Search for a movie
+- /cancel: Disables current state. Can help in cases if @Mr_Shadow_Robot not responing on your message.
+- /id: get the current group id. If used by replying to a message, gets that user's id.
+- /info: get information about a user.
+- /paste: Pase the text/file in nekobin
+- /gps: Find a location
 
 <b>BOOK DOWNLOAD</b>
-- `/book <book name> <Usage>`: Gets Instant Download Link Of Given Book.
+- /book <code>[book name] [Usage]</code>: Gets Instant Download Link Of Given Book.
 
 <b>FAKE INFO</b>
-- `/fakegen`: Generates Fake Information
-- `/picgen`: generate a fake pic
+- /fakegen: Generates Fake Information
+- /picgen: Generate a fake pic
 
 <b>ZIPPER</b>
-- `/zip`: reply to a telegram file to compress it in .zip format
-- `/unzip`: reply to a telegram file to decompress it from the .zip format
+- /zip: Reply to a telegram file to compress it in .zip format
+- /unzip: Reply to a telegram file to decompress it from the .zip format
 
 <b>WEATHER</b>
-- `/weather [city]`: Gives weather forecast
-- `/weatherimg [city]`: Gives weather image
+- /weather <code>[city]</code>: Gives weather forecast
+- /weatherimg <code>[city]</code>: Gives weather image
 
 <b>PHONE INFO</b>
-- `/phone [phone no]`: Gathers number info
+- /phone <code>[phone no]</code>: Gathers number info
 
 <b>CURRENCY</b>
- - `/cash` : currency converter
-Example syntax: `/cash 1 USD LKR`
+ - /cash: currency converter
+Example syntax: <code>/cash 1 USD LKR</code>
 
 <b>NAME HISTORY</b>
-- `/namehistory [REPLY]`: Get the Username and Name history of user.
+- /namehistory <code>[REPLY]</code>: Get the Username and Name History of user.
 
 <b>SEND</b>
-- `/send [MESSAGE]`: Send given text by bot.
+- /send <code>[MESSAGE]</code>: Send given text by bot.
 
 <b>CC CHECKER</b>
-- `/au [cc]`: Stripe Auth given CC
-- `/pp [cc]`: Paypal 1$ Guest Charge
-- `/ss [cc]`: Speedy Stripe Auth
-- `/ch [cc]`: Check If CC is Live
-- `/bin [bin]`: Gather's Info About the bin
-- `/gen [bin]`: Generates CC with given bin
-- `/key [sk]`: Checks if Stripe key is Live
+- /au <code>[cc]</code>: Stripe Auth given CC
+- /pp <code>[cc]</code>: Paypal 1$ Guest Charge
+- /ss <code>[cc]</code>: Speedy Stripe Auth
+- /ch <code>[cc]</code>: Check If CC is Live
+- /bin <code>[bin]</code>: Gather's Info About the bin
+- /gen <code>[bin]</code>: Generates CC with given bin
+- /key <code>[sk]</code>: Checks if Stripe key is Live
 
-**Note**: Format of cc is ccnum|mm|yy|cvv
-**Privacy warning: Don't check any of your personal CC's.**
+<b>Note</b>: Format of cc is <code>ccnum|mm|yy|cvv</code>
+<b>⭕️ Privacy warning: Don't check any of your personal CC's.</b>
   
 <b>URL TOOLS</b>
-- `/short (url)`: Shortify given url.
-- `/ip (url)`: Displays information about an IP / domain.
-- `/direct (url)`: Generates direct links from the sourceforge.net
+- /short <code>(url)<code>: Shortify given url.
+- /ip <code>(url)<code>: Displays information about an IP / domain.
+- /direct <code>(url)<code>: Generates direct links from the sourceforge.net
 """
