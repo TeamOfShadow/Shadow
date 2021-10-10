@@ -523,9 +523,9 @@ STRINGS:
   #havent_set_rules_note: "You haven't set the rules note yet."
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
-    default_welcome: "Merhaba {mention}! Nasılsın?"
+    default_welcome: "Hey there {mention}, and Welcome to {chatname}! How are you?"
     default_security_note: "Hoşgeldin {mention}! Lütfen kendini insan olarak doğrulamak için aşağıdaki düğmeye basın!"
-    thank_for_add: "Thanks for adding me to your group! Take a look at `/help` and follow my news channel @ShadowbotUpdates."
+    thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @ShadowbotUpdates"
     bool_invalid_arg: Geçersiz argüman, beklenen <code>on</code>/<code>off</code>.
     #/setwelcome
     saved: Karşılama mesajı <b>%s</b> içinde kaydedildi
