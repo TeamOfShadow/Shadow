@@ -16,9 +16,9 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import datetime
-import requests
-
 from typing import List
+
+import requests
 from telethon import types
 from telethon.tl import functions
 
