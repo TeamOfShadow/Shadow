@@ -21,6 +21,7 @@ import asyncio
 import html
 import os
 import sys
+
 import rapidjson
 import requests
 
@@ -39,6 +40,7 @@ from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_not
 from .utils.term import chat_term
 
 skemmers = get_int_key("OPERATORS", True)
+
 
 @register(cmds="allcommands", is_op=True)
 async def all_commands_list(message):
