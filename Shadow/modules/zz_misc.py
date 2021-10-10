@@ -15,8 +15,8 @@
 
 __mod_name__ = "Misc ⚙️"
 
-__help__ = """
-An "odds and ends" module for small, simple commands which don't really fit anywhere.
+__help__ = """""
+An 'odds and ends' module for small, simple commands which don't really fit anywhere.
 
 <b>Available commands:</b>
 
@@ -74,4 +74,4 @@ Example syntax: <code>/cash 1 USD LKR</code>
 - /short <code>(url)<code>: Shortify given url.
 - /ip <code>(url)<code>: Displays information about an IP / domain.
 - /direct <code>(url)<code>: Generates direct links from the sourceforge.net
-"""
+"""""
