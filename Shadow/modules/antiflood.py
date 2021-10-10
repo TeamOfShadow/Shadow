@@ -380,11 +380,11 @@ You know how sometimes, people join, send 100 messages, and ruin your chat? With
 Antiflood allows you to take action on users that send more than x messages in a row.
 
 <b>Admins only:</b>
-- `/antiflood`: Gives you current configuration of antiflood in the chat
-- `/antiflood off`: Disables Antiflood
-- `/setflood (limit)`: Sets flood limit
+- /antiflood: Gives you current configuration of antiflood in the chat
+- /antiflood <code>off</code>: Disables Antiflood
+- /setflood <code>(limit)</code>: Sets flood limit
 
-Replace `(limit)` with any integer, should be less than 200. When setting up, Shadow would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
+Replace <code>(limit)</code> with any integer, should be less than 200. When setting up, Shadow would ask you to send expiration time, if you dont understand what this expiration time for? User who sends specified limit of messages consecutively within this TIME, would be kicked, banned whatever the action is. if you dont want this TIME, wants to take action against those who exceeds specified limit without mattering TIME INTERVAL between the messages. you can reply to question with 0
 
 <b>Configuring the time:</b>
 <code>2m</code> = 2 minutes
@@ -397,11 +397,12 @@ Shadow: <code>Please send expiration time [...]</code>
 Me: <code>5m</code> (5 minutes)
 DONE!
 
-- `/setfloodaction (action)`: Sets the action to taken when user exceeds flood limit
+- /setfloodaction <code>(action)</code>: Sets the action to taken when user exceeds flood limit
 
 <b>Currently supported actions:</b>
-<code>ban</code>
-<code>mute</code>
-<code>kick</code>
+ - <code>ban</code>
+ - <code>mute</code>
+ - <code>kick</code>
+
 <i>More in soon™</i>
 """
