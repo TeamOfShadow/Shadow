@@ -1,4 +1,4 @@
-﻿# Copyright (C) 2021 AlainX & Shadow
+﻿# Copyright (C) 2021 Alain & DeshadeethThisarana
 
 # This file is part of Shadow (Telegram Bot)
 
