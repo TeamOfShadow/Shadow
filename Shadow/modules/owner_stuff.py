@@ -21,12 +21,11 @@ import asyncio
 import html
 import os
 import sys
-
 import rapidjson
 import requests
-from Skem import skemmers
 
 from Shadow import SHADOW_VERSION, bot, dp
+from Shadow.config import get_int_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
@@ -39,6 +38,7 @@ from .utils.message import need_args_dec
 from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_note_item
 from .utils.term import chat_term
 
+skemmers = get_int_key(OPERATORS, required="True")
 
 @register(cmds="allcommands", is_op=True)
 async def all_commands_list(message):
@@ -167,7 +167,7 @@ async def bot_stop(message):
 
 @register(cmds="restart", is_owner=True)
 async def restart_bot(message):
-    await message.reply("ShadowX will be restarted...")
+    await message.reply("Shadow will be restarted...")
     args = [sys.executable, "-m", "Shadow"]
     os.execl(sys.executable, *args)
 
@@ -217,7 +217,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "Shadow.stuff.logs.Shadow"
+    input_str = "Shadow.stuff.logs"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -235,7 +235,7 @@ async def get_event(message):
     await message.reply(event)
 
 
-@register(cmds="stats", is_owner=True)
+@register(cmds="stats", is_op=True)
 async def stats(message):
     if message.from_user.id in skemmers:
         text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
