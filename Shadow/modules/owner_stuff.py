@@ -238,7 +238,7 @@ async def get_event(message):
 
 
 @register(cmds="stats", is_op=True)
-async def stats(message):
+async def __stats__(message):
     if message.from_user.id in skemmers:
         text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
 
