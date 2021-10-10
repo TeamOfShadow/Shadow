@@ -25,8 +25,8 @@ import sys
 import rapidjson
 import requests
 
-from Shadow.config import get_list_key
 from Shadow import SHADOW_VERSION, bot, dp
+from Shadow.config import get_list_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
