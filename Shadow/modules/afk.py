@@ -37,7 +37,7 @@ async def afk(message, strings):
         arg = get_args_str(message)
     except:
         return
-    # dont support AFK as anon admin
+    # Don't support AFK as anon admin
     if message.from_user.id == 1087968824:
         await message.reply(strings["afk_anon"])
         return
