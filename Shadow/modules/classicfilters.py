@@ -272,7 +272,6 @@ async def on_all_snip_delete(event):
     remove_all_filters(event.chat_id)
     await event.reply(f"Classic Filter in current chat deleted !")
 
-
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
