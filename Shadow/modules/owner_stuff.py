@@ -39,7 +39,7 @@ from .utils.message import need_args_dec
 from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_note_item
 from .utils.term import chat_term
 
-skemmers = get_int_key("OPERATORS", True)
+skemmers = get_list_key("OPERATORS", True)
 
 
 @register(cmds="allcommands", is_op=True)
