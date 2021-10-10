@@ -1,4 +1,5 @@
 # Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
+
 # Copyright (C) 2021 TeamOfShadow
 # Copyright (C) 2020 - 2021 Deshadeeth Thisarana
 
@@ -267,16 +268,16 @@ __mod_name__ = "Connections"
 __help__ = """
 Sometimes you need change something in your chat, like notes, but you don't want to spam in it, try connections, this allow you change chat settings and manage chat's content in personal message with Shadow.
 
-<b>Available commands are:</b>
+<b>Available commands:</b>
 <b>Avaible only in PM:</b>
-- `/connect`: Show last connected chats button for fast connection
-- `/connect (chat ID or chat nickname)`: Connect to chat by argument which you provided
-- `/reconnect`: Connect to last connected chat before
-- `/disconnect`: Disconnect from the connected chat
+- /connect: Show last connected chats button for fast connection
+- /connect <code>(chat ID or chat nickname)</code>: Connect to chat by argument which you provided
+- /reconnect: Connect to last connected chat before
+- /disconnect: Disconnect from the connected chat
 
 <b>Avaible only in groups:</b>
-- `/connect`: Direct connect to this group
+- /connect: Direct connect to this group
 
 <b>Other commands:</b>
-- `/allowusersconnect (on/off enable/disable)`: Enable or disable connection feature for regular users, for admins connections will be works always
+- /allowusersconnect <code>(on/off enable/disable)</code>: Enable or disable connection feature for regular users, for admins connections will be works always
 """
