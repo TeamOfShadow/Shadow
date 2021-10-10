@@ -16,7 +16,7 @@
 __mod_name__ = "Misc ⚙️"
 
 __help__ = (
-"""
+    """
 An 'odds and ends' module for small, simple commands which don't really fit anywhere.
 
 <b>Available commands:</b>
