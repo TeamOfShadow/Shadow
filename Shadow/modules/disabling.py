@@ -185,11 +185,11 @@ __help__ = """
 Disabling module is allow you to disable certain commands from be executed by users.
 
 <b>Available commands:</b>
-- `/disableable`: Shows commands which can be disabled
-- `/disabled`: Shows the all disabled commands of the chat
-- `/disable (command name)`: Disables the command. Command should be disable-able
-- `/enable (command name)`: Enables the disabled command back.
-- `/enableall`: Enables all disabled commands
+- /disableable: Shows commands which can be disabled
+- /disabled: Shows the all disabled commands of the chat
+- /disable <code>(command name)</code>: Disables the command. Command should be disable-able
+- /enable <code>(command name)</code>: Enables the disabled command back.
+- /enableall: Enables all disabled commands
 
 <b>Examples:</b>
 <code>/disable help</code>
