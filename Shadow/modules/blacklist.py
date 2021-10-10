@@ -202,17 +202,18 @@ async def _(event):
 
 
 __help__ = """
-<b> Shadow's filters are the blacklist too </b>
- - `/addfilter [trigger] Select action`: blacklists the trigger
- - `/delfilter [trigger]`: stop blacklisting a certain blacklist trigger
- - `/filters`: list all active blacklist filters
+<b>Shadow's filters are the blacklist too </b>
+ - /addfilter <code>[trigger] [Select action]</code>: Blacklists the trigger
+ - /delfilter <code>[trigger]</code>: Stop blacklisting a certain blacklist trigger
+ - /filters: List all active blacklist filters
  
-<b> Url Blacklist </B>
- - `/geturl`: View the current blacklisted urls
- - `/addurl [urls]`: Add a domain to the blacklist. The bot will automatically parse the url.
- - `/delurl [urls]`: Remove urls from the blacklist.
-<b> Example:</b>
- - `/addblacklist the admins suck`: This will remove "the admins suck" everytime some non-admin types it
- - `/addurl bit.ly`: This would delete any message containing url "bit.ly"
+<b>Url Blacklist</b>
+ - /geturl: View the current blacklisted urls
+ - /addurl <code>[urls]</code>: Add a domain to the blacklist. The bot will automatically parse the url.
+ - /delurl <code>[urls]</code>: Remove urls from the blacklist.
+
+<b>Example:</b>
+ - /addblacklist <code>the admins suck</code>: This will remove <code>"the admins suck"</code> everytime some non-admin types it
+ - /addurl <code>bit.ly</code>: This would delete any message containing url <code>"bit.ly"</code>
 """
 __mod_name__ = "Blacklist"
