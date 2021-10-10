@@ -435,18 +435,18 @@ __help__ = """
 Module specially made for Android users.
 
 <b>GSI</b>
-- `/phh`: Get the latest PHH AOSP GSIs.
-- `/phhmagisk`: Get the latest PHH Magisk.
+- /phh: Get the latest PHH AOSP GSIs.
+- /phhmagisk: Get the latest PHH Magisk.
 
 <b>Device firmware:</b>
-- `/samcheck (model) (csc)`: Samsung only - shows the latest firmware info for the given device, taken from samsung servers.
-- `/samget (model) (csc)`: Similar to the <code>/samcheck</code> command but having download buttons.
+- /samcheck <code>(model) (csc)</code>: Samsung only - shows the latest firmware info for the given device, taken from samsung servers.
+- /samget <code>(model) (csc)</code>: Similar to the <code>/samcheck</code> command but having download buttons.
 
 <b>Misc</b>
-- `/magisk: Get latest Magisk releases.
-- `/twrp (codename)`: Gets latest TWRP for the android device using the codename.
-- `/ofox (codename)`: Gets latest OFRP for the android device using the codename.
-- `/ofox devices`: Sends the list of devices with stable releases supported by OFRP.
-- `/models (codename)`: Search for Android device models using codename.
-- `/whatis (codename)`: Find out which smartphone is using the codename.
+- /magisk: Get latest Magisk releases.
+- /twrp <code>(codename)</code>: Gets latest TWRP for the android device using the codename.
+- /ofox <code>(codename)</code>: Gets latest OFRP for the android device using the codename.
+- /ofox <code>(devices)</code>: Sends the list of devices with stable releases supported by OFRP.
+- /models <code>(codename)</code>: Search for Android device models using codename.
+- /whatis <code>(codename)</code>: Find out which smartphone is using the codename.
 """
