@@ -1,6 +1,5 @@
 ﻿# Copyright (C) 2020 - 2021 Shadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -112,5 +111,5 @@ async def virusscan(event):
 
 _mod_name_ = "Virus Scan"
 _help_ = """
- - `/scanit`: Scan a file for virus (MAX SIZE = 3MB)
+ - /scanit: Scan a file for virus (MAX SIZE = 3MB)
 """
