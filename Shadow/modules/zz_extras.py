@@ -1,4 +1,4 @@
-﻿# This file is part of Shadow (Telegram Bot)
+# This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -21,26 +21,26 @@ The module that contains extra tools that help you to do many cool stuff.
 <b>Available Commands:</b>
 
 <b>AFK</b>
-- /afk <reason> : Mark yourself as AFK (Away From Keyboard)
+- /afk <code><reason></code>: Mark yourself as AFK (Away From Keyboard)
   
 <b>URL LOCK</b> 
  Block links sent by users in your group 
-- /urllock [on/off]: Enable/Disable URL Lock
+- /urllock <code>[on/off]</code>: Enable/Disable URL Lock
 
 <b>DATE TIME</b>
-- /datetime [timezone]: Get the present date and time information
+- /datetime <code>[timezone]</code>: Get the present date and time information
 You can check out this [link](https://timezonedb.com/time-zones) for the available timezones
 
 <b>PASTE</b>
-- /paste [reply]
+- /paste <code>[reply]</code>
 Usage: Create a paste or a shortened url using [nekobin](https://nekobin.com)
 
 <b>TELEGRAPH</b>
-- /telegraph media: To Make Link of Any Image Or MP4 video. 
-- /telegraph text: To make Link of Any Text Written. 
+- /telegraph <code>[media]</code>: To Make Link of Any Image Or MP4 video. 
+- /telegraph <code>[text]</code>: To make Link of Any Text Written. 
 
 <b>TORRENT</b>
-- /torrent [QUERY]: Search for torrent links
+- /torrent <code>[QUERY]</code>: Search for torrent links
 
 <b>TEXT TO SPEECH & SPEECH TO TEXT</b>
 - /tts: Reply to any message to get text to speech output
@@ -50,11 +50,11 @@ Usage: Create a paste or a shortened url using [nekobin](https://nekobin.com)
 - /scanit: Scan a file for virus (MAX SIZE = 3MB)
  
 <b>COUNTRY</b>
-- /country [country name]: Gathering info about given country
+- /country <code>[country name]</code>: Gathering info about given country
 
 <b>COVID</b>              
 - /covid: To Get Global Stats of Covid.
-- /covid [COUNTRY]: To Get Stats of A Single Country.
+- /covid <code>[COUNTRY]</code>: To Get Stats of A Single Country.
   
 <b>CRICKET INFO</b>     
 - /cs: Gathers cricket information (globally)
@@ -63,12 +63,11 @@ Usage: Create a paste or a shortened url using [nekobin](https://nekobin.com)
 - /getqr: Get text in qr.
 - /makeqr: Make a qr code.
   
-<b> KARMA </b>
+<b>KARMA</b>
 [UPVOTE] - Use upvote keywords like "+", "+1", "thanks" etc to upvote a message.
 [DOWNVOTE] - Use downvote keywords like "-", "-1", etc to downvote a message.
 
-- /karma [ON/OFF]: Enable/Disable karma in group. 
-- /karma [Reply to a message]: Check user's karma
+- /karma <code>[ON/OFF]</code>: Enable/Disable karma in group. 
+- /karma <code>[Reply to a message]</code>: Check user's karma
 - /karma: Chek karma list of top 10 users
-        
 """
