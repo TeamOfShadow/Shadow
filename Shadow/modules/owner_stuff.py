@@ -219,7 +219,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "Shadow.stuff.logs"
+    input_str = "Shadow.stuff.logs.txt"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
