@@ -15,8 +15,7 @@
 
 __mod_name__ = "🛠 Extras"
 
-__help__ = (
-    """
+__help__ = """
 The module that contains extra tools that help you to do many cool stuff.
 
 <b>Available Commands:</b>
@@ -71,5 +70,4 @@ Usage: Create a paste or a shortened url using [nekobin](https://nekobin.com)
 - /karma <code>[ON/OFF]</code>: Enable/Disable karma in group. 
 - /karma <code>[Reply to a message]</code>: Check user's karma
 - /karma: Chek karma list of top 10 users
-""",
-)
+"""
