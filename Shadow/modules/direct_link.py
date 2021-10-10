@@ -16,9 +16,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import re
-from random import choice
-
 import requests
+
+from random import choice
 from bs4 import BeautifulSoup
 
 from Shadow.decorator import register
@@ -83,7 +83,7 @@ def sourceforge(url: str) -> str:
         dl_url = (
             f'https://{mirror["id"]}.dl.sourceforge.net/project/{project}/{file_path}'
         )
-        reply += f'<a href="{dl_url}">{name}</a> '
+        reply += f'<a href="{dl_url}">{name}</a>'
     return reply
 
 
