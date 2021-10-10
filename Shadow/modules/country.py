@@ -110,9 +110,9 @@ Region:- {reg}
 Sub Region:- {sub}
 Time Zones:- {tom}
 Top Level Domain:- {lanester}
-wikipedia:- {wiki}</b>
+Wikipedia:- {wiki}</b>
 
-<b>Gathered By Shadow</b>
+<b>Gathered By @Mr_Shadow_Robot</b>
 """
 
     await borg.send_message(
