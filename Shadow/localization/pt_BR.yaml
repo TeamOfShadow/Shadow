@@ -94,7 +94,7 @@ STRINGS:
     delall_success: Excluído com sucesso todos os ({count}) filtro neste chat!
   warns:
     #/warn
-    warn_sofi: "Haha não tem como me avisar!"
+    warn_Shadow: "Haha não tem como me avisar!"
     warn_self: "Você quer se avisar? Saia do grupo então."
     warn_admin: "Bem... Você está errado. Você não pode avisar um administrador."
     warn: "{admin} avisou {user} em <b>{chat_name}</b>\n"
