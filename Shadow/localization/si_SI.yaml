@@ -139,7 +139,7 @@ STRINGS:
     # / delwarns
     purged_warns: "{admin} reset <code> {num} </code> <b> {chat_title} </b> හි {user} ගැන අනතුරු අඟවයි!"
     usr_no_wrn: "{user} නැවත සැකසීමට කිසිදු අනතුරු ඇඟවීමක් නොමැත."
-    rst_wrn_sofi: "ඩේසි කිසි විටෙකත් නැවත සැකසීමට අනතුරු ඇඟවූයේ නැත."
+    rst_wrn_Shadow: "Shadow කිසි විටෙකත් නැවත සැකසීමට අනතුරු ඇඟවූයේ නැත."
     not_digit: අනතුරු ඇඟවීම් ඉලක්කම් විය යුතුය!
 
     # / අනතුරු ඇඟවීමේ මාදිලිය
