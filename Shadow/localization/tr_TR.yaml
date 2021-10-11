@@ -84,7 +84,7 @@ STRINGS:
       Lütfen kaldırmak için birini seçin:
   warns:
     #/warn
-    warn_sofi: "Haha, kendimi uyarmanın bir yolu yok!"
+    warn_Shadow: "Haha, kendimi uyarmanın bir yolu yok!"
     warn_self: "Kendini uyarmak ister misin? Sadece sohbetten ayrıl."
     warn_admin: "Şey... yanılıyorsun. Bir yöneticiyi uyaramazsın."
     warn: "{admin}, <b>{chat_name}</b> 'da {user} adlı kullanıcıyı uyardı"
