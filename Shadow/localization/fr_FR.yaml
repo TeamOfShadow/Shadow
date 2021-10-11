@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} a réinitialiser <code>{num}</code> les avertissements de {user} dans <b>{chat_title}</b>!"
     usr_no_wrn: "{user} n'a aucun avertissement à réinitialiser."
-    rst_wrn_sofi: 'Daisy n''avait jamais d''avertissments a réinitialiser.'
+    rst_wrn_Shadow: 'Shadow n''avait jamais d''avertissments a réinitialiser.'
     not_digit: La limite des avertissements doit être des chiffres !
     #/warnmode
     same_mode: Ceci est le mode actuel ! Comment puis-je le changer ?
