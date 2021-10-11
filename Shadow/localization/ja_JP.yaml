@@ -94,7 +94,7 @@ STRINGS:
     delall_success: チャット内のすべてのフィルター（{count}）を削除しました！
   warns:
     #/warn
-    warn_sofi: "自分自身を警告する方法はありません!"
+    warn_Shadow: "自分自身を警告する方法はありません!"
     warn_self: "自分自身に警告したいですか？チャットはそのままにしておきましょう。"
     warn_admin: "あなたが間違っています。管理者に警告することはできません。"
     warn: "{admin} has warned {user} in <b>{chat_name}</b>\n"
