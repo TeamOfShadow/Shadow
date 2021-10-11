@@ -94,7 +94,7 @@ STRINGS:
     delall_success: '¡Se han eliminado con éxito todos los filtros ({count}) en este chat!'
   warns:
     #/warn
-    warn_sofi: "¡Jaja! ¡No hay manera de advertirme a mí misma!"
+    warn_Shadow: "¡Jaja! ¡No hay manera de advertirme a mí misma!"
     warn_self: "¿Quieres darte una advertencia a ti mismo? Sólo abandona el chat entonces."
     warn_admin: "Bueno... estás equivocado. No puedes advertir a un administrador."
     warn: "{admin} ha advertido a {user} en {chat_name}\n"
