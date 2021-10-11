@@ -94,7 +94,7 @@ STRINGS:
     delall_success: Berhasil menghapus seluruh ({count}) filter di obrolan ini!
   warns:
     #/warn
-    warn_sofi: "Haha, tidak mungkin untuk memperingati saya sendiri!"
+    warn_Shadow: "Haha, tidak mungkin untuk memperingati saya sendiri!"
     warn_self: "Anda ingin memperingati diri sendiri? Tinggalkan saja obrolan ini."
     warn_admin: "Baiklah.. anda salah. Anda tidak dapat memperingati seorang admin."
     warn: "{admin} telah memperingati {user} di <b>{chat_name}</b>\n"
