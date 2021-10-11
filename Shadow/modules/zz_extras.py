@@ -29,11 +29,11 @@ The module that contains extra tools that help you to do many cool stuff.
 
 <b>DATE TIME</b>
 - /datetime <code>[timezone]</code>: Get the present date and time information
-You can check out this [link](https://timezonedb.com/time-zones) for the available timezones
+You can check out this <a href="https://timezonedb.com/time-zones">link</a> for the available timezones
 
 <b>PASTE</b>
 - /paste <code>[reply]</code>
-Usage: Create a paste or a shortened url using [nekobin](https://nekobin.com)
+Usage: Create a paste or a shortened url using <a href="https://nekobin.com">nekobin</a>
 
 <b>TELEGRAPH</b>
 - /telegraph <code>[media]</code>: To Make Link of Any Image Or MP4 video. 
