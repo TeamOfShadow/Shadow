@@ -94,7 +94,7 @@ STRINGS:
     delall_success: Tous les filtres ({count}) de ce chat ont bien été supprimés!
   warns:
     #/warn
-    warn_sofi: "Haha aucun moyen d'avertir sois-même !"
+    warn_Shadow: "Haha aucun moyen d'avertir sois-même !"
     warn_self: "Vous voulez vous avertir ? Quittez la discussion alors."
     warn_admin: "Eh bien... vous avez tort. Vous ne pouvez pas avertir un administrateur."
     warn: "{admin} a averti {user} dans <b>{chat_name}</b>\n"
