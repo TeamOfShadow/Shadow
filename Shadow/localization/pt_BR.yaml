@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} redefiniu <code>{num}</code> os avisos de {user} em <b>{chat_title}</b>!"
     usr_no_wrn: "{user} não tem nenhum aviso para redefinir."
-    rst_wrn_sofi: 'Daisy nunca teve avisos para redefinir.'
+    rst_wrn_Shadow: 'Shadow nunca teve avisos para redefinir.'
     not_digit: Os limites de avisos devem ser dígitos!
     #/warnmode
     same_mode: Este é o modo atual! Como posso mudá-lo?
