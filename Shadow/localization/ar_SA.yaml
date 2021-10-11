@@ -94,7 +94,7 @@ STRINGS:
     delall_success: Successfully deleted all ({count}) filters in this chat!
   warns:
     #/warn
-    warn_sofi: "أنا لن أحذِّر المشرف!"
+    warn_Shadow: "أنا لن أحذِّر المشرف!"
     warn_self: ".هل تريد أن تحذر نفسك؟ فقط اترك الدردشة"
     warn_admin: "حسنا.. أنت مخطئ لا يمكنك تحذير مشرف :("
     warn: "{admin} حذّر/حذّرت {user} في <b>{chat_name}</b>\n"
