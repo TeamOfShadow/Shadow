@@ -94,7 +94,7 @@ STRINGS:
     delall_success: Successfully deleted all ({count}) filters in this chat!
   warns:
     #/warn
-    warn_sofi: "Хаха невозможно дать предупреждение самой себе!"
+    warn_Shadow: "Хаха невозможно дать предупреждение самой себе!"
     warn_self: "Ты хочешь дать предупреждение себе? Просто выйди отсюда."
     warn_admin: "Ты серьёзно? Ты не можешь дать предупреждение админу."
     warn: "{admin} выдал варн {user} в <b>{chat_name}</b>\n"
