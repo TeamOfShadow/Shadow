@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} menyetel ulang <code>{num}</code> peringatan pada {user} di <b>{chat_title}</b>!"
     usr_no_wrn: "{user} tidak memiliki peringatan untuk di setel ulang."
-    rst_wrn_sofi: 'Daisy tidak pernah diperingati untuk di setel ulang.'
+    rst_wrn_Shadow: 'Shadow tidak pernah diperingati untuk di setel ulang.'
     not_digit: Batas peringatan harus berupa angka!
     #/warnmode
     same_mode: Berikut ini adalah mode saat ini! Bagaimana saya akan mengubahnya?
