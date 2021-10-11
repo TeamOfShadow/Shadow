@@ -74,7 +74,7 @@ async def warn_func(message: Message, chat, user, text, strings, filter_action=F
     user_id = user["user_id"] if filter_action is False else user
 
     if user_id == BOT_ID:
-        await message.reply(strings["warn_sofi"])
+        await message.reply(strings["warn_Shadow"])
         return
 
     if not filter_action:
