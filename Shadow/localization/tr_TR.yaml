@@ -108,7 +108,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin}, {user} kullanıcısının <code>{num}</code> adet uyarısını <b>{chat_title}</b> grubunda kaldırdı!"
     usr_no_wrn: "{user} sıfırlamak için herhangi bir uyarıya sahip değildir."
-    rst_wrn_sofi: 'AllMight asla sıfırlama konusunda uyarmadı.'
+    rst_wrn_Shadow: 'Shadow asla sıfırlama konusunda uyarmadı.'
     not_digit: Uyarı limiti rakam olmalı!
     #/warnmode
     same_mode: Bu geçerli mod! Bunu nasıl değiştirebilirim?
