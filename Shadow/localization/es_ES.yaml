@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} restableció <code>{num}</code> advertencias a {user} en <b>{chat_title}</b>!"
     usr_no_wrn: "{user} aún no tiene ninguna advertencia."
-    rst_wrn_sofi: 'Daisy nunca ha tenido advertencias para reiniciar.'
+    rst_wrn_Shadow: 'Shadow nunca ha tenido advertencias para reiniciar.'
     not_digit: '¡El límite de advertencias deben ser dígitos!'
     #/warnmode
     same_mode: '¡Este es el modo actual! ¿Cómo puedo cambiarlo?'
