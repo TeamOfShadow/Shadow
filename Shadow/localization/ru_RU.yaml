@@ -118,7 +118,7 @@ STRINGS:
     #/delwarns
     purged_warns: "{admin} удалил <code>{num}</code> предупреждений у {user} в <b>{chat_title}</b>!"
     usr_no_wrn: "У {user} пока нет предупреждений."
-    rst_wrn_sofi: 'У Daisy никогда не было предупреждений для сброса.'
+    rst_wrn_Shadow: 'У Shadow никогда не было предупреждений для сброса.'
     not_digit: Лимит предупреждений должен быть цифрами!
     #/warnmode
     same_mode: Это текущий режим! Как изменить его?
