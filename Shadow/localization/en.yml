@@ -106,7 +106,7 @@ STRINGS:
 
   warns:
     # /warn
-    warn_sofi: "Haha no way to warn myself!"
+    warn_Shadow: "Haha no way to warn myself!"
     warn_self: "Do you wanna warn yourself? Just leave the chat then."
     warn_admin: "Well.. you are wrong. You can't warn an admin."
     warn: "{admin} has warned {user} in <b>{chat_name}</b>\n"
