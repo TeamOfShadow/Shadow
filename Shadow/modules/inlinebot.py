@@ -66,51 +66,50 @@ class AioHttp:
 
 __mod_name__ = "Inline"
 __help__ = """
- <b> INLINE BOT SERVICE OF @MR_SHADOW_ROBOT </b> 
+<b>INLINE BOT SERVICE OF @MR_SHADOW_ROBOT</b> 
  
-<i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
+<i>I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
 
  <b>Syntax</b>
-`@Mr_Shadow_Robot [command] [query]`
+<code>@Mr_Shadow_Robot [command] [query]</code>
 
 <b> Commands Available</b>
-- `alive`: Check Bot's Stats.
-- `yt [query]`: Youtube Search.
-- `tr [LANGUAGE_CODE] [QUERY]**`: Translate Text.
-- `modapk [name]`: Give you direct link of mod apk.
-- `ud [QUERY]`: Urban Dictionary Query
-- `google [QUERY]`: Google Search.
-- `webss [URL]`: Take Screenshot Of A Website.
-- `bitly [URL]`: Shorten A Link.
-- `wall [Query]`: Find Wallpapers.
-- `pic [Query]`: Find pictures.
-- `saavn [SONG_NAME]`: Get Songs From Saavn.
-- `deezer [SONG_NAME]`: Get Songs From Deezer.
-- `torrent [QUERY]`: Torrent Search.
-- `reddit [QUERY]`: Get memes from reddit.
-- `imdb [QUERY]`: Search movies on imdb.
-- `spaminfo [ID]`: Get spam info of the user.
-- `lyrics [QUERY]`: Get lyrics of the song.
-- `paste [TEXT]`: Paste text on pastebin.
-- `define [WORD]`: Get definition from Dictionary.
-- `synonyms [WORD]`: Get synonyms from Dictionary.
-- `antonyms [WORD]`: Get antonyms from Dictionary.
-- `country [QUERY]`: Get Information about given country.
-- `cs`: Gathers Cricket info (Globally).
-- `covid [COUNTRY]`: Get covid updates of given country.
-- `fakegen`: Gathers fake information.
-- `weather [QUERY]`: Get weather information.
-- `datetime [QUERY]`: Get Date & time information of given country/region.
-- `app [QUERY]`: Search for apps in playstore.
-- `gh [QUERY]`: Search github.
-- `so [QUERY]`: Search stack overflow.
-- `wiki [QUERY]`: Search wikipedia.
-- `ping`: Check ping rate.
-- `pokedex [TEXT]`: Pokemon Search
+- alive: Check Bot's Stats.
+- yt <code>[query]</code>: Youtube Search.
+- tr <code>[LANGUAGE_CODE] [QUERY]</code>: Translate Text.
+- modapk <code>[name]</code>: Give you direct link of mod apk.
+- ud <code>[QUERY]</code>: Urban Dictionary Query
+- google <code>[QUERY]</code>: Google Search.
+- webss <code>[URL]</code>: Take Screenshot Of A Website.
+- bitly <code>[URL]</code>: Shorten A Link.
+- wall <code>[Query]</code>: Find Wallpapers.
+- pic <code>[Query]</code>: Find pictures.
+- saavn <code>[SONG_NAME]</code>: Get Songs From Saavn.
+- deezer <code>[SONG_NAME]</code>: Get Songs From Deezer.
+- torrent <code>[QUERY]</code>: Torrent Search.
+- reddit <code>[QUERY]</code>: Get memes from reddit.
+- imdb <code>[QUERY]</code>: Search movies on imdb.
+- spaminfo <code>[ID]</code>: Get spam info of the user.
+- lyrics <code>[QUERY]</code>: Get lyrics of the song.
+- paste <code>[TEXT]</code>: Paste text on pastebin.
+- define <code>[WORD]</code>: Get definition from Dictionary.
+- synonyms <code>[WORD]</code>: Get synonyms from Dictionary.
+- antonyms <code>[WORD]</code>: Get antonyms from Dictionary.
+- country <code>[QUERY]</code>: Get Information about given country.
+- cs: Gathers Cricket info (Globally).
+- covid <code>[COUNTRY]</code>: Get covid updates of given country.
+- fakegen: Gathers fake information.
+- weather <code>[QUERY]</code>: Get weather information.
+- datetime <code>[QUERY]</code>: Get Date & time information of given country/region.
+- app <code>[QUERY]</code>: Search for apps in playstore.
+- gh <code>[QUERY]</code>: Search github.
+- so <code>[QUERY]</code>: Search stack overflow.
+- wiki <code>[QUERY]</code>: Search wikipedia.
+- ping: Check ping rate.
+- pokedex <code>[TEXT]</code>: Pokemon Search
 """
 
-__MODULE__ = "Inline"
-__HELP__ = """
+INLINE = """
 ==>> **INLINE BOT SERVICE OF @MR_SHADOW_ROBOT** <<==
 
 __I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline__
@@ -157,7 +156,7 @@ __I'm more efficient when added as group admin. By the way these commands can be
 
 @app.on_message(filters.command("inline"))
 async def inline_help(_, message):
-    await app.send_message(message.chat.id, text=__HELP__)
+    await app.send_message(message.chat.id, text=INLINE, parse_mode="markdown")
 
 
 @app.on_inline_query()
@@ -166,7 +165,7 @@ async def inline_query_handler(client, query):
         text = query.query.lower()
         answers = []
         if text.strip() == "":
-            answerss = await inline_help_func(__HELP__)
+            answerss = await inline_help_func(INLINE)
             await client.answer_inline_query(query.id, results=answerss, cache_time=10)
             return
         elif text.split()[0] == "alive":
