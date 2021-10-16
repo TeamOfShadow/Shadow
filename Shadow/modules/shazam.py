@@ -47,8 +47,9 @@ async def shazamm(client, message):
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
 
-<u><b>Identified Using @Mr_Shadow_Robot - Join our support @ShadowBotSupport</b></u>
-<i>Powered by @GalaxyFriendsTeam</i>
+<u><b>Identified Using @Mr_Shadow_Robot - Join our support @ShadowSupport_Official</b></u>
+
+<i>Powered by @TeamOfShadow</i>
 
 <b>Special Credits</b>:- Friday Userbot
 """
