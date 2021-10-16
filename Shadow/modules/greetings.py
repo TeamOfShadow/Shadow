@@ -1115,19 +1115,19 @@ __mod_name__ = "Greetings"
 __help__ = """
 <b>Available commands:</b>
 <b>General:</b>
-- `/setwelcome` or `/savewelcome`: Set welcome
-- `/setwelcome (on/off)`: Disable/enabled welcomes in your chat
-- `/welcome`: Shows current welcomes settings and welcome text
-- `/resetwelcome`: Reset welcomes settings
+- /setwelcome or /savewelcome: Set welcome
+- /setwelcome <code>(on/off)</code>: Disable/enabled welcomes in your chat
+- /welcome: Shows current welcomes settings and welcome text
+- /resetwelcome: Reset welcomes settings
 
 <b>Welcome security:</b>
-- `/welcomesecurity (level)`
+- /welcomesecurity <code>(level)</code>
 Turns on welcome security with specified level, either button or captcha.
 Setting up welcome security will give you a choice to customize join expiration time aka minimum time given to user to verify themselves not a bot, users who do not verify within this time would be kicked!
 
-- `/welcomesecurity (off/no/0)`: Disable welcome security
-- `/setsecuritynote`: Customise the "Please press button below to verify themself as human!" text
-- `/delsecuritynote`: Reset security text to defaults
+- /welcomesecurity <code>(off/no/0)</code>: Disable welcome security
+- /setsecuritynote: Customise the "Please press button below to verify themself as human!" text
+- /delsecuritynote: Reset security text to defaults
 
 <b>Available levels:</b>
 - <code>button</code>: Ask user to press "I'm not a bot" button
@@ -1135,26 +1135,26 @@ Setting up welcome security will give you a choice to customize join expiration 
 - <code>captcha</code>: Ask user to enter captcha
 
 <b>Welcome mutes:</b>
-- `/welcomemute (time)`: Set welcome mute (no media) for X time
-- `/welcomemute (off/no)`: Disable welcome mute
+- /welcomemute <code>(time)</code>: Set welcome mute (no media) for X time
+- /welcomemute <code>(off/no)</code>: Disable welcome mute
 
 <b>Purges:</b>
-- `/cleanwelcome (on/off)`: Deletes old welcome messages and last one after 45 mintes
-- `/cleanservice (on/off)`: Cleans service messages (user X joined)
+- /cleanwelcome <code>(on/off)</code>: Deletes old welcome messages and last one after 45 mintes
+- /cleanservice <code>(on/off)</code>: Cleans service messages (user X joined)
 
 If welcome security is enabled, user will be welcomed with security text, if user successfully verify self as user, he/she will be welcomed also with welcome text in his PM (to prevent spamming in chat).
 
 If user didn't verified self for 24 hours he/she will be kicked from chat.
 
 <b>Addings buttons and variables to welcomes or security text:</b>
+
 Buttons and variables syntax is same as notes buttons and variables.
-Send `/buttonshelp` and `/variableshelp` to get started with using it.
+Send /buttonshelp and /variableshelp to get started with using it.
 
 <b>Settings images, gifs, videos or stickers as welcome:</b>
-Saving attachments on welcome is same as saving notes with it, read the notes help about it. But keep in mind what you have to replace `/save` to `/setwelcome`
+Saving attachments on welcome is same as saving notes with it, read the notes help about it. But keep in mind what you have to replace /save to /setwelcome
 
 <b>Examples:</b>
 Get the welcome message without any formatting
 -> <code>/welcome raw</code>
-
 """
