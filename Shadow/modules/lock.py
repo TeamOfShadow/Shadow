@@ -133,7 +133,8 @@ async def locktypes(_, message):
     for i in permissions:
         perms += f"__**{i}**__\n"
     await message.reply_text(perms)
-    
+
+
 __mod_name__ = "Locks"
 
 __help__ = """
