@@ -1,6 +1,5 @@
 # Credit To @TheHamkerCat and his bot William Butcher Bot.
 
-
 """
 MIT License
 Copyright (c) 2021 TheHamkerCat
@@ -134,3 +133,37 @@ async def locktypes(_, message):
     for i in permissions:
         perms += f"__**{i}**__\n"
     await message.reply_text(perms)
+    
+__mod_name__ = "Locks"
+
+__help__ = """
+Use this feature to block users from sending specific message types to your group!
+
+<b>Basic Locks</b>
+
+Available Comands:
+- /locks or /locktypes: Use this command to know current state of your locks in your group!
+- /lock <code>(locktype)</code>: Locks a type of messages
+- /unlock <code>(locktype)</code>: Unlocks a type of message
+
+Locktypes:
+- <code>all</code>
+- <code>messages</code>
+- <code>stickers</code>
+- <code>gifs</code>
+- <code>media</code>
+- <code>polls</code>
+- <code>games</code>
+- <code>url_prev</code>
+- <code>inline</code>
+- <code>pin</code>
+- <code>info</code>
+- <code>invite</code>
+
+
+<b> Url Lock </b>
+Block links sent by users in your group
+
+Available Commands:
+- /urllock <code>[on/off]</code>: Enable/Disable URL Lock
+"""
