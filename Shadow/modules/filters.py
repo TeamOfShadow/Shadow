@@ -429,14 +429,14 @@ async def __import__(chat_id, data):
 __mod_name__ = "Filters"
 
 __help__ = """
-<b> GENERAL FILTERS </b>
+<b>GENERAL FILTERS </b>
 Filter module is great for everything! Filter in here is used to filter words or sentences in your chat - send notes, warn, ban those!
-<i> General (Admins):</i>
-- `/addfilter (word/sentence)`: This is used to add filters.
-- `/delfilter (word/sentence)`: Use this command to remove a specific filter.
-- `/delallfilters`: As in command this is used to remove all filters of group.
+<i>General (Admins):</i>
+- /addfilter <code>(word/sentence)</code>: This is used to add filters.
+- /delfilter <code>(word/sentence)</code>: Use this command to remove a specific filter.
+- /delallfilters: As in command this is used to remove all filters of group.
 
-<i> As of now, there is 6 actions that you can do: </i>
+<i>As of now, there is 6 actions that you can do: </i>
 - <code>Send a note</code>
 - <code>Warn the user</code>
 - <code>Ban the user</code>
@@ -444,26 +444,26 @@ Filter module is great for everything! Filter in here is used to filter words or
 - <code>tBan the user</code>
 - <code>tMute the user</code>
 
-<i> A filter can support multiple actions ! </i>
+<i>A filter can support multiple actions ! </i>
 
 Ah if you don't understand what this actions are for? Actions says bot what to do when the given <code>word/sentence</code> is triggered.
-You can also use regex and buttons for filters. Check `/buttonshelp` to know more.
+You can also use regex and buttons for filters. Check /buttonshelp to know more.
 
-<i> Available for all users:</i>
-- `/filters` 
-- `/listfilters`
+<i>Available for all users:</i>
+- /filters
+- /listfilters
 
 You want to know all filter of your chat/ chat you joined? Use this command. It will list all filters along with specified actions !
 
-<b> TEXT FILTERS </b>
+<b>TEXT FILTERS </b>
 Text filters are for short and text replies
 <i> Commands available </i>
-- `/filter [KEYWORD] [REPLY TO MESSAGE]`: Filters the replied message with given keyword.
-- `/stop [KEYWORD]`: Stops the given filter.
+- /filter <code>[KEYWORD] [REPLY TO MESSAGE]</code>: Filters the replied message with given keyword.
+- /stop <code>[KEYWORD]</code>: Stops the given filter.
 
 
-<i> Difference between text filter and filter</i>
-* If you filtered word "hi" with `/addfilter` it filters all words including hi. 
+<i>Difference between text filter and filter</i>
+* If you filtered word "hi" with /addfilter it filters all words including hi. 
   Future explained:
     - When a filter added to hi as "hello" when user sent a message like "It was a hit" bot replies as "Hello" as word contain hi
     ** You can use regex to remove this if you like
@@ -473,8 +473,8 @@ Text filters can filter
 - <code>A sentence</code>
 - <code>A sticker</code>
 
-<b> CLASSIC FILTERS </b>
-Classic filters are just like Marie's filter system. If you still like that kind of filter system. Use `/cfilterhelp` to know more
+<b>CLASSIC FILTERS </b>
+Classic filters are just like Marie's filter system. If you still like that kind of filter system. Use /cfilterhelp to know more
 
 ⚠️ READ FROM TOP
 """
