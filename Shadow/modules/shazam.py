@@ -3,7 +3,6 @@ from json import JSONDecodeError
 
 import requests
 
-# import ffmpeg
 from pyrogram import filters
 
 from Shadow.function.pluginhelpers import admins_only, edit_or_reply, fetch_audio
