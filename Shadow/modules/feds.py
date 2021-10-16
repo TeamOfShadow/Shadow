@@ -1379,29 +1379,29 @@ In both cases Shadow will help you.
 <code>(? )</code>: additional argument
 
 <b>Only Federation owner:</b>
-- `/fnew (name)` or `/newfed (name)`: Creates a new Federation
-- `/frename (?Fed ID) (new name)`: Renames your federation
-- `/fdel (?Fed ID)` or `/delfed (?Fed ID)`: Removes your Federation
-- `/fpromote (user) (?Fed ID)`: Promotes a user to the your Federation
-- `/fdemote (user) (?Fed ID)`: Demotes a user from the your Federation
-- `/fsub (Fed ID)`: Subscibes your Federation over provided
-- `/funsub (Fed ID)`: unsubscibes your Federation from provided
-- `/fsetlog (? Fed ID) (? chat/channel id)` or `/setfedlog (? Fed ID) (? chat/channel id)`: Set's a log chat/channel for your Federation
-- `/funsetlog (?Fed ID)` or `/unsetfedlog (?Fed ID)`: Unsets a Federation log chat\channel
-- `/fexport (?Fed ID)`: Exports Federation bans
-- `/fimport (?Fed ID) (file)`: Imports Federation bans
+- /fnew <code>(name)</code> or /newfed <code>(name)</code>: Creates a new Federation
+- /frename <code>(?Fed ID) (new name)</code>: Renames your federation
+- /fdel <code>(?Fed ID)</code> or /delfed <code>(?Fed ID)</code>: Removes your Federation
+- /fpromote <code>(user) (?Fed ID)</code>: Promotes a user to the your Federation
+- /fdemote <code>(user) (?Fed ID)</code>: Demotes a user from the your Federation
+- /fsub <code>(Fed ID)</code>: Subscibes your Federation over provided
+- /funsub <code>(Fed ID)</code>: unsubscibes your Federation from provided
+- /fsetlog <code>(? Fed ID) (? chat/channel id)</code> or /setfedlog <code>(? Fed ID) (? chat/channel id)</code>: Set's a log chat/channel for your Federation
+- /funsetlog <code>(?Fed ID)</code> or /unsetfedlog <code>(?Fed ID)</code>: Unsets a Federation log chat\channel
+- /fexport <code>(?Fed ID)</code>: Exports Federation bans
+- /fimport <code>(?Fed ID) (file)</code>: Imports Federation bans
 
 <b>Only Chat owner:</b>
-- `/fjoin (Fed ID)` or `/joinfed (Fed ID)`: Joins current chat to provided Federation
-- `/fleave` or `/leavefed`: Leaves current chat from the fed
+- /fjoin <code>(Fed ID)</code> or /joinfed <code>(Fed ID)</code>: Joins current chat to provided Federation
+- /fleave or /leavefed: Leaves current chat from the fed
 
 <b>Avaible for Federation admins and owners:</b>
-- `/fchatlist (?Fed ID)` or `/fchats (?Fed ID)`: Shows a list of chats in the your Federation list
-- `/fban (user) (?Fed ID) (?reason)`: Bans user in the Fed and Feds which subscribed on this Fed
-- `/sfban (user) (?Fed ID) (?reason)`: As above, but silently - means the messages about fbanning and replied message (if was provided) will be removed
-- `/unfban (user) (?Fed ID) (?reason)`: Unbans a user from a Federation
+- /fchatlist <code>(?Fed ID)</code> or /fchats <code>(?Fed ID)</code>: Shows a list of chats in the your Federation list
+- /fban <code>(user) (?Fed ID) (?reason)</code>: Bans user in the Fed and Feds which subscribed on this Fed
+- /sfban <code>(user) (?Fed ID) (?reason)</code>: As above, but silently - means the messages about fbanning and replied message (if was provided) will be removed
+- /unfban <code>(user) (?Fed ID) (?reason)</code>: Unbans a user from a Federation
 
 <b>Avaible for all users:</b>
-- `/fcheck (?user)`: Check user's federation ban info
-- `/finfo (?Fed ID)`: Info about Federation
+- /fcheck <code>(?user)</code>: Check user's federation ban info
+- /finfo <code>(?Fed ID)</code>: Info about Federation
 """
