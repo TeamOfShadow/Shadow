@@ -24,5 +24,5 @@ from Shadow.services.pyrogram import pbot
 @pbot.on_message(filters.command("send") & ~filters.edited & ~filters.bot & ~filters.private)
 @admins_only
 async def send(client, message):
-    args = get_text(message)
-    await pbot.send_message(message.chat.id, text=args)
+    lol = get_text(message)
+    await pbot.send_message(message.chat.id, text=lol)
