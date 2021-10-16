@@ -236,8 +236,8 @@ __help__ = """
 - Protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
- - /globalmode [on/off]: Enable|Disable English only mode
- - /profanity [on/off]: Enable|Disable slag word cleaning
+ - /globalmode <code>[on/off]</code>: Enable|Disable English only mode
+ - /profanity <code>[on/off]</code>: Enable|Disable slag word cleaning
  
 """
 __mod_name__ = "Group Guardian"
