@@ -138,7 +138,7 @@ __mod_name__ = "Rules"
 
 __help__ = """
 <b>Available Commands:</b>
-- `/setrules (rules)`: saves the rules (also works with reply)
-- `/rules`: Shows the rules of chat if any!
-- `/resetrules`: Resets group's rules
+- /setrules <code>(rules)</code>: saves the rules (also works with reply)
+- /rules: Shows the rules of chat if any!
+- /resetrules: Resets group's rules
 """
