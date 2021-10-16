@@ -1,6 +1,5 @@
 # Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -124,12 +123,12 @@ async def _(event):
 
 
 __help__ = """
- - `/tr language code` or `/tr language code , text`: Type in reply to a message or (`/tr language code , text`) to get it's translation in the destination language
- - `/define text`: Type the word or expression you want to search \nFor example `/define lesbian`
- - `/spell`: while replying to a message, will reply with a grammar corrected version
- - `/forbesify`: Correct your punctuations better use the advanced spell module
- - `/synonyms word`: Find the synonyms of a word
- - `/antonyms word`: Find the antonyms of a word
+ - /tr <code>[language code]</code> or /tr <code>[language code] [text]</code>: Type in reply to a message or (<code>/tr [language code] [text]</code>) to get it's translation in the destination language
+ - /define <code>[text]</code>: Type the word or expression you want to search \nFor example <code>/define lesbian</code>
+ - /spell: while replying to a message, will reply with a grammar corrected version
+ - /forbesify: Correct your punctuations better use the advanced spell module
+ - /synonyms <code>[word]</code>: Find the synonyms of a word
+ - /antonyms <code>[word]</code>: Find the antonyms of a word
 """
 
 __mod_name__ = "Lang-Tools"
