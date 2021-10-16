@@ -85,8 +85,8 @@ We're all busy people who don't have time to monitor our groups 24/7. But how do
 Presenting reports; if someone in your group thinks someone needs reporting, they now have an easy way to call all admins.
 
 <b>Available commands:</b>
-- `/report (?text)`: Reports
-- `@admins`: Same as above, but not a clickable
+- /report <code>(?text)</code>: Reports
+- <code>@admins</code>: Same as above, but not a clickable
 
 <b>TIP:</b> You always can disable reporting by <b>Disabling</b> module
 """
