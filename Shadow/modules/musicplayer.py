@@ -1,4 +1,4 @@
-﻿# Copyright (C) 2021 GalaxyFriendsTeam
+﻿# Copyright (C) 2021 TeamOfShadow
 
 # This file is part of Shadow (Telegram Bot)
 
