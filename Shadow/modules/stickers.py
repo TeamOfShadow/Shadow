@@ -1,6 +1,5 @@
 ﻿# Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -527,10 +526,10 @@ __help__ = """
 Stickers are the best way to show emotion.
 
 <b>Available commands:</b>
-- `/searchsticker`: Search stickers for given query.
-- `/packinfo`: Reply to a sticker to get it's pack info
-- `/getsticker`: Uploads the .png of the sticker you've replied to
-- `/sticker_id`: Reply to Sticker for getting sticker Id. 
-- `/kang [Emoji for sticker] [reply to Image/Sticker]`: Kang replied sticker/image.
-- `/rmkang [REPLY]`: Remove replied sticker from your kang pack.
+- /searchsticker: Search stickers for given query.
+- /packinfo: Reply to a sticker to get it's pack info
+- /getsticker: Uploads the .png of the sticker you've replied to
+- /sticker_id: Reply to Sticker for getting sticker Id. 
+- /kang <code>[Emoji for sticker] [reply to Image/Sticker]</code>: Kang replied sticker/image.
+- /rmkang <code>[REPLY]</code>: Remove replied sticker from your kang pack.
 """
