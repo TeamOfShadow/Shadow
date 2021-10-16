@@ -170,8 +170,8 @@ __help__ = """
 This module is dedicated towards utilising Shadow's localization feature! 
 
 <b>Available commands:</b>
-- `/lang`: Shows a list of avaible languages
-- `/lang (language codename)`: Sets a language
+- /lang: Shows a list of avaible languages
+- /lang <code>(language codename)</code>: Sets a language
 
 <b>Example:</b> <code>/lang</code>
 Shadow will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
