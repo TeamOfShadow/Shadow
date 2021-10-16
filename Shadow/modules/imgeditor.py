@@ -457,8 +457,8 @@ __help__ = """
 Shadow have some advanced image editing tools inbuilt
 <b>Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker</b> and more
 
-- `/edit [reply to image]`: Open the image editor
-- `/rmbg [REPLY]`: Revove BG of replied image/sticker.
+- /edit <code>[reply to image]</code>: Open the image editor
+- /rmbg <code>[REPLY]</code>: Revove BG of replied image/sticker.
 
 <i> Special credits to @TroJanzHEX </i>
 """
