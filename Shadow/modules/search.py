@@ -1,6 +1,5 @@
 ﻿# Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -280,11 +279,11 @@ async def apk(e):
 
 
 __help__ = """
- - `/google <text>`: Perform a google search
- - `/so`: Search For Something On Stack OverFlow
- - `/gh`: Search For Something On GitHub
- - `/yts`: Search For Something On YouTub
- - `/app <appname>`: Searches for an app in Play Store and returns its details.
+ - /google <code>[text]</code>: Perform a google search
+ - /so: Search For Something On Stack OverFlow
+ - /gh: Search For Something On GitHub
+ - /yts: Search For Something On YouTub
+ - /app <code>[appname]</code>: Searches for an app in Play Store and returns its details.
 """
 
 __mod_name__ = "Search"
