@@ -1,6 +1,5 @@
 # Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -22,10 +21,8 @@ from Shadow.function.pluginhelpers import admins_only, get_text
 from Shadow.services.pyrogram import pbot
 
 
-@pbot.on_message(
-    filters.command("send") & ~filters.edited & ~filters.bot & ~filters.private
-)
+@pbot.on_message(filters.command("send") & ~filters.edited & ~filters.bot & ~filters.private)
 @admins_only
 async def send(client, message):
     args = get_text(message)
-    await client.send_message(message.chat.id, text=args)
+    await pbot.send_message(message.chat.id, text=args)
