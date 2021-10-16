@@ -64,14 +64,14 @@ __help__ = """
 All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!
 
 <b> Basic Pins </b>
-- `/pin`: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
-- `/unpin`: unpins the currently pinned message - add 'all' to unpin all pinned messages.
+- /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
+- /unpin: unpins the currently pinned message - add 'all' to unpin all pinned messages.
 
 <b> Other </b>
-- `/permapin [reply]`: Pin a custom message through the bot. This message can contain markdown, buttons, and all the other cool features.
-- `/unpinall`: Unpins all pinned messages.
-- `/antichannelpin [yes/no/on/off]`: Don't let telegram auto-pin linked channels. If no arguments are given, shows current setting.
-- `/cleanlinked [yes/no/on/off]`: Delete messages sent by the linked channel.
+- /permapin <code>[reply]</code>: Pin a custom message through the bot. This message can contain markdown, buttons, and all the other cool features.
+- /unpinall: Unpins all pinned messages.
+- /antichannelpin <code>[yes/no/on/off]</code>: Don't let telegram auto-pin linked channels. If no arguments are given, shows current setting.
+- /cleanlinked <code>[yes/no/on/off]</code>: Delete messages sent by the linked channel.
 
 Note: When using antichannel pins, make sure to use the /unpin command, instead of doing it manually. Otherwise, the old message will get re-pinned when the channel sends any messages.
 """
