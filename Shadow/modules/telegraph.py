@@ -1,6 +1,5 @@
 # Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -27,7 +26,7 @@ from telethon import events
 from Shadow.services.telethon import tbot as borg
 
 telegraph = Telegraph()
-r = telegraph.create_account(short_name="DaisyX")
+r = telegraph.create_account(short_name="Shadow")
 auth_url = r["auth_url"]
 
 # Will change later
