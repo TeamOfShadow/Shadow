@@ -86,6 +86,6 @@ __help__ = """
 Need to delete lots of messages? That's what purges are for!
 
 <b>Available commands:</b>
-- `/purge`: Deletes all messages from the message you replied to, to the current message.
-- `/del`: Deletes the message you replied to and your "<code>/del</code>" command message.
+- /purge: Deletes all messages from the message you replied to, to the current message.
+- /del: Deletes the message you replied to and your "<code>/del</code>" command message.
 """
