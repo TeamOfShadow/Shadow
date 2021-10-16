@@ -35,7 +35,7 @@ async def invitelink(client, message):
         )
         return
     await message.reply_text(f"Invite link generated successfully \n\n {invitelink}")
-    
+
 
 __HELP__ = """
 Classic filters are just like marie's filter system. If you still like that kind of filter system
