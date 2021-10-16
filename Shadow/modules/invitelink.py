@@ -1,6 +1,5 @@
 # Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -21,6 +20,23 @@ from pyrogram import filters
 from Shadow.function.pluginhelpers import admins_only
 from Shadow.services.pyrogram import pbot
 
+
+@pbot.on_message(
+    filters.command("invitelink") & ~filters.edited & ~filters.bot & ~filters.private
+)
+@admins_only
+async def invitelink(client, message):
+    chid = message.chat.id
+    try:
+        invitelink = await client.export_chat_invite_link(chid)
+    except:
+        await message.reply_text(
+            "Add me as admin of yor group first",
+        )
+        return
+    await message.reply_text(f"Invite link generated successfully \n\n {invitelink}")
+    
+
 __HELP__ = """
 Classic filters are just like marie's filter system. If you still like that kind of filter system
 
@@ -37,23 +53,7 @@ You can also include buttons in filters, example send `/savefilter google` in re
 """
 
 
-@pbot.on_message(
-    filters.command("invitelink") & ~filters.edited & ~filters.bot & ~filters.private
-)
-@admins_only
-async def invitelink(client, message):
-    chid = message.chat.id
-    try:
-        invitelink = await client.export_chat_invite_link(chid)
-    except:
-        await message.reply_text(
-            "Add me as admin of yor group first",
-        )
-        return
-    await message.reply_text(f"Invite link generated successfully \n\n {invitelink}")
-
-
 @pbot.on_message(filters.command("cfilterhelp") & ~filters.private & ~filters.edited)
 @admins_only
 async def filtersghelp(client, message):
-    await client.send_message(message.chat.id, text=__HELP__)
+    await client.send_message(message.chat.id, text=__HELP__, parse_mode="markdown")
