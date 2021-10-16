@@ -159,28 +159,27 @@ async def _(message):
 
 
 __help__ = """
-Solves complex math problems using [this website](https://newton.now.sh) and python math module
- - `/simplify`: Math `/math 2^2+2(2)`
- - `/factor`: Factor `/factor x^2 + 2x`
- - `/derive`: Derive `/derive x^2+2x`
- - `/integrate`: Integrate `/integrate x^2+2x`
- - `/zeroes`: Find 0's `/zeroes x^2+2x`
- - `/tangent`: Find Tangent `/tangent 2lx^`
- - `/area`: Area Under Curve `/area 2:4lx^3`
- - `/cos`: Cosine `/cos pi`
- - `/sin`: Sine `/sin 0`
- - `/tan`: Tangent `/tan 0`
- - `/arccos`: Inverse Cosine `/arccos 1`
- - `/arcsin`: Inverse Sine `/arcsin 0`
- - `/arctan`: Inverse Tangent `/arctan 0`
- - `/abs`: Absolute Value `/abs -1`
- - `/log`*: Logarithm `/log 2l8`
+Solves complex math problems using <a href="https://newton.now.sh">this website</a> and python math module
+
+ - /simplify: Math <code>/math 2^2+2(2)</code>
+ - /factor: Factor <code>/factor x^2 + 2x</code>
+ - /derive: Derive <code>/derive x^2+2x</code>
+ - /integrate: Integrate <code>/integrate x^2+2x</code>
+ - /zeroes: Find 0's <code>/zeroes x^2+2x</code>
+ - /tangent: Find Tangent <code>/tangent 2lx^</code>
+ - /area: Area Under Curve <code>/area 2:4lx^3</code>
+ - /cos: Cosine <code>/cos pi</code>
+ - /sin: Sine <code>/sin 0</code>
+ - /tan: Tangent <code>/tan 0</code>
+ - /arccos: Inverse Cosine <code>/arccos 1</code>
+ - /arcsin: Inverse Sine <code>/arcsin 0</code>
+ - /arctan: Inverse Tangent <code>/arctan 0</code>
+ - /abs: Absolute Value <code>/abs -1</code>
+ - /log: Logarithm <code>/log 2l8</code>
  
 Keep in mind, To find the tangent line of a function at a certain x value, send the request as c|f(x) where c is the given x value and f(x) is the function expression, the separator is a vertical bar '|'. See the table above for an example request.
 To find the area under a function, send the request as c:d|f(x) where c is the starting x value, d is the ending x value, and f(x) is the function under which you want the curve between the two x values.
 To compute fractions, enter expressions as numerator(over)denominator. For example, to process 2/4 you must send in your expression as 2(over)4. The result expression will be in standard math notation (1/2, 3/4).
-
-<i> Special credits :- @InukaASiTH </i>
 """
 
 __mod_name__ = "Maths"
