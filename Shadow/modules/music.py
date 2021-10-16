@@ -1,6 +1,5 @@
 # Copyright (C) 2021 TeamOfShadow
 
-
 # This file is part of Shadow (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
@@ -126,10 +125,10 @@ async def lyrics(client, message):
 __mod_name__ = "Music"
 
 __help__ = """
- - `/video <query>`: download video from youtube. 
- - `/deezer <query>`: download from deezer. 
- - `/saavn <query>`: download song from saavn. 
- - `/music <query>`: download song from yt servers. (API BASED) 
- - `/lyrics <song name>`: This plugin searches for song lyrics with song name.
- - `/glyrics <song name>`: This plugin searches for song lyrics with song name and artist.
+ - /video <code>[query]</code>: Download video from youtube. 
+ - /deezer <code>[query]</code>: Download from deezer. 
+ - /saavn <code>[query]</code>: Download song from saavn. 
+ - /music <code>[query]</code>: Download song from yt servers. (API BASED) 
+ - /lyrics <code>[song name]</code>: This plugin searches for song lyrics with song name.
+ - /glyrics <code>[song name]</code>: This plugin searches for song lyrics with song name and artist.
 """
