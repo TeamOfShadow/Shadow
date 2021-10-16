@@ -33,5 +33,5 @@ async def tagall(client, message):
 
 _mod_name_ = "Tagall"
 _help_ = """
-- `/tagall`: Tag everyone in a chat
+- /tagall: Tag everyone in a chat
 """
