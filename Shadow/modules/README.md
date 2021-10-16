@@ -45,8 +45,6 @@ __help__ = """
 """
 ```
 
-
-
 ## Advanced: Pyrogram
 ```python3
 from Shadow.function.pluginhelpers import admins_only
