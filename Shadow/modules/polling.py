@@ -428,16 +428,14 @@ Here is how you can do it:
 - /poll [poll-id] <i>question</i> | <i>True@optionnumber/False</i> [True/False] [True/False] [option1] [option2] ... upto [option10]
 
 <b> Examples </b> -
-- /poll 12345 | am i cool? | False False False yes no`
-- /poll 12345 | am i cool? | True@1 False False yes no`
+- /poll 12345 | am i cool? | False False False yes no
+- /poll 12345 | am i cool? | True@1 False False yes no
 
 <b> To stop a poll </b>
-Reply to the poll with `/stoppoll [poll-id]` to stop the poll
+Reply to the poll with "/stoppoll [poll-id]" to stop the poll
 
 <b> Fogot poll id </b>
 - /forgotpollid - to reset poll
-
 """
-
 
 __mod_name__ = "Polls"
