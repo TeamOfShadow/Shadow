@@ -24,7 +24,7 @@ __help__ = """
 
 <b>•Groups and channels Voice Chat Music Play 🎧</b>
   
-==> <b>♾Settings up♾</b>
+== <b>♾Settings up♾</b>
 
 ╔🟡For Group Music Play🟡 
 ╠ Make <b>@Mr_Shadow_Robot</b> admin
@@ -37,7 +37,7 @@ __help__ = """
 ╠ Send /userbotjoinchannel in linked group
 ╚ Now send commands in linked group 
 
-==> <b>Commands⚒</b>
+== <b>Commands⚒</b>
 
 ╔🟡For Group Music Play🟡 
 ╠ /play <code>[song name]</code>: Play song using youtube music
@@ -71,7 +71,7 @@ __help__ = """
 ⚠️ Note: <code>channel</code> can also be used instead of <code>c</code> in commands 
  eg:-<code>/cplay</code> = <code>/channelplay</code>
 
-==> <b>More tools 🧑‍🔧</b>
+== <b>More tools 🧑‍🔧</b>
 
 ╔🟡For Groups🟡 
 ╠ /admincache: Updates admin info of your group. Try if bot isn't recognize admin
