@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Red-Aura & Shadow & HamkerCat
+# Copyright (C) 2021 Red-Aura & HamkerCat
 
 # This file is part of Shadow (Telegram Bot)
 
