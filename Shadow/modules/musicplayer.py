@@ -75,11 +75,11 @@ __help__ = """
 
 ╔🟡For Groups🟡 
 ╠ /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-╠ /userbotjoin: Invite </b>@Shadow_Helper</b> Userbot to your group
+╠ /userbotjoin: Invite <b>@Shadow_Helper</b> Userbot to your group
 ╚ /userbotleave: Userbot leaves from your group
 
 ╔🟡For Channels🟡
-╚ /userbotjoinchannel: Invite </b>@Shadow_Helper</b> Userbot to your channel
+╚ /userbotjoinchannel: Invite <b>@Shadow_Helper</b> Userbot to your channel
 
 <b>⭕️PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME⭕️</b>
 """
