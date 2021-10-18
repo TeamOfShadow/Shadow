@@ -18,9 +18,9 @@
 __mod_name__ = "Music Player"
 
 __help__ = """
-》==(: SHADOW MUSIC :)==《
+<b>》==(: SHADOW MUSIC :)==《</b>
             
-<i>Assistant name >></i> <b>@Shadow_Helper</b>
+<i>Assistant name »</i> <b>@Shadow_Helper</b>
 
 <b>•Groups and channels Voice Chat Music Play 🎧</b>
   
