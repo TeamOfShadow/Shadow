@@ -1757,7 +1757,7 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
-**Some memes command, find it all out yourself !**
+<b>Some memes command, find it all out yourself !</b>
 
  - /owo: OWO the text
  - /stretch: STRETCH the text
