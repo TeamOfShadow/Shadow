@@ -24,11 +24,9 @@ import sys
 
 import rapidjson
 import requests
-
 from Skem import skemmers
 
 from Shadow import SHADOW_VERSION, bot, dp
-from Shadow.config import get_list_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
@@ -276,6 +274,7 @@ async def __stats__():
         len(REGISTRED_COMMANDS), len(LOADED_MODULES)
     )
     return text
+
 
 @get_strings_dec("owner_stuff")
 async def __user_info__(message, user_id, strings):
