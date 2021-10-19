@@ -27,12 +27,12 @@ import requests
 from Skem import skemmers
 
 from Shadow import SHADOW_VERSION, bot, dp
+from Shadow.config import get_list_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
 from Shadow.services.redis import redis
 from Shadow.services.telethon import tbot
-from Shadow.config import get_list_key
 
 from .utils.covert import convert_size
 from .utils.language import get_strings_dec
@@ -41,6 +41,7 @@ from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_not
 from .utils.term import chat_term
 
 contributors = get_list_key("OPERATORS", True)
+
 
 @register(cmds="allcommands", is_op=True)
 async def all_commands_list(message):
@@ -236,6 +237,7 @@ async def get_event(message):
     event = str(rapidjson.dumps(message, indent=2))
     await message.reply(event)
 
+
 @register(cmds="stats", is_op=True)
 async def stats(message):
     if message.from_user.id in contributors:
@@ -244,7 +246,8 @@ async def stats(message):
     if not message.from_user.id in contributors:
         text = "You are not a contributor"
         await message.reply(text)
-    
+
+
 @register(cmds="botstats", is_op=True)
 async def botstats(message):
     if message.from_user.id in skemmers:
