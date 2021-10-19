@@ -25,6 +25,8 @@ import sys
 import rapidjson
 import requests
 
+from Skem import skemmers
+
 from Shadow import SHADOW_VERSION, bot, dp
 from Shadow.config import get_list_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
@@ -38,8 +40,6 @@ from .utils.language import get_strings_dec
 from .utils.message import need_args_dec
 from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_note_item
 from .utils.term import chat_term
-
-skemmers = get_list_key("OPERATORS", True)
 
 
 @register(cmds="allcommands", is_op=True)
@@ -238,7 +238,7 @@ async def get_event(message):
 
 
 @register(cmds="stats", is_op=True)
-async def __stats__(message):
+async def stats(message):
     if message.from_user.id in skemmers:
         text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
 
@@ -256,6 +256,9 @@ async def __stats__():
         text += f"* Webhooks mode, listen port: <code>{os.getenv('WEBHOOKS_PORT', 8080)}</code>\n"
     else:
         text += "* Long-polling mode\n"
+    text += "* Database structure version <code>{}</code>\n".format(
+        (await db.db_structure.find_one({}))["db_ver"]
+    )
     local_db = await db.command("dbstats")
     if "fsTotalSize" in local_db:
         text += "* Database size is <code>{}</code>, free <code>{}</code>\n".format(
@@ -273,7 +276,6 @@ async def __stats__():
         len(REGISTRED_COMMANDS), len(LOADED_MODULES)
     )
     return text
-
 
 @get_strings_dec("owner_stuff")
 async def __user_info__(message, user_id, strings):
