@@ -259,11 +259,11 @@ async def __before_serving__(loop):
 
 
 async def __stats__():
-    text = "* <code>{}</code> total users, in <code>{}</code> chats\n".format(
+    text = "• <code>{}</code> total users\n• <code>{}</code> total chats\n".format(
         await db.user_list.count_documents({}), await db.chat_list.count_documents({})
     )
 
-    text += "* <code>{}</code> new users and <code>{}</code> new chats in the last 48 hours\n".format(
+    text += "• <code>{}</code> new users and <code>{}</code> new chats in the last 48 hours\n".format(
         await db.user_list.count_documents(
             {
                 "first_detected_date": {
