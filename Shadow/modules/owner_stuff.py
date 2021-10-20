@@ -27,7 +27,7 @@ import requests
 from Skem import skemmers
 
 from Shadow import SHADOW_VERSION, bot, dp
-from Shadow.config import get_list_key 
+from Shadow.config import get_list_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
@@ -41,6 +41,7 @@ from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_not
 from .utils.term import chat_term
 
 OPERATORS = get_list_key("OPERATORS", True)
+
 
 @register(cmds="allcommands", is_op=True)
 async def all_commands_list(message):
@@ -236,6 +237,7 @@ async def get_event(message):
     event = str(rapidjson.dumps(message, indent=2))
     await message.reply(event)
 
+
 @register(cmds="stats")
 async def fake_stats(message):
     if not message.from_user.id in OPERATORS:
@@ -249,7 +251,6 @@ Here is them :)
 If you think these are wrong details please join and ask from @ShadowSupport_Official 
 """
         await message.reply(text, parse_mode="HTML")
-
 
 
 @register(cmds="stats", is_owner=True)
