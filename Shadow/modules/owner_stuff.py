@@ -234,6 +234,7 @@ async def get_event(message):
     event = str(rapidjson.dumps(message, indent=2))
     await message.reply(event)
 
+
 @register(cmds="stats", is_op=True)
 async def stats(message):
     if not message.from_user.id in skemmers:
