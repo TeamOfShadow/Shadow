@@ -27,7 +27,6 @@ import requests
 from Skem import skemmers
 
 from Shadow import SHADOW_VERSION, bot, dp
-from Shadow.config import get_list_key
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
@@ -39,8 +38,6 @@ from .utils.language import get_strings_dec
 from .utils.message import need_args_dec
 from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_note_item
 from .utils.term import chat_term
-
-contributors = get_list_key("OPERATORS", True)
 
 
 @register(cmds="allcommands", is_op=True)
@@ -240,7 +237,7 @@ async def get_event(message):
 
 @register(cmds="stats", is_op=True)
 async def stats(message):
-    if not message.from_user.id in contributors:
+    if not message.from_user.id in skemmers:
         text = "Coming soon"
         await message.reply(text)
 
