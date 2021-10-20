@@ -234,15 +234,7 @@ async def get_event(message):
     event = str(rapidjson.dumps(message, indent=2))
     await message.reply(event)
 
-
 @register(cmds="stats", is_op=True)
-async def stats(message):
-    if not message.from_user.id in skemmers:
-        text = "Coming soon"
-        await message.reply(text)
-
-
-@register(cmds="botstats", is_op=True)
 async def stats(message):
     if not message.from_user.id in skemmers:
         text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
