@@ -240,13 +240,9 @@ async def get_event(message):
 
 @register(cmds="stats", is_op=True)
 async def stats(message):
-    if message.from_user.id in contributors:
+    if not message.from_user.id in contributors:
         text = "Coming soon"
         await message.reply(text)
-    if not message.from_user.id in contributors:
-        text = "You are not a contributor"
-        await message.reply(text)
-
 
 @register(cmds="botstats", is_op=True)
 async def stats(message):
