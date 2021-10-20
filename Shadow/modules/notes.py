@@ -667,7 +667,7 @@ async def private_notes_func(message, strings):
 
 
 async def __stats__():
-    text = "* <code>{}</code> total notes\n".format(await db.notes.count_documents({}))
+    text = "• <code>{}</code> total notes\n".format(await db.notes.count_documents({}))
     return text
 
 
