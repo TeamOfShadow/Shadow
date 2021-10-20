@@ -240,15 +240,18 @@ async def get_event(message):
 
 @register(cmds="stats")
 async def fake_stats(message):
+    if message.from_user.id in OPERATORS:
+        text = "Check below message for stats of me Pro.!"
+        await message.reply(text)
     if not message.from_user.id in OPERATORS:
         text = f"""
-<b>Are you need stats of Shadow {message.from_user.first_name} ?</b>
+<b>{message.from_user.first_name}, Are you need stats of Shadow ?</b>
 
 Here is them :)
 • Total users - Uncountable
 • Total groups - 100 Million
 
-If you think these are wrong details please join and ask from @ShadowSupport_Official 
+If you think these are wrong details please join and ask from @ShadowSupport_Official 😁
 """
         await message.reply(text, parse_mode="HTML")
 
