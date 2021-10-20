@@ -13,5 +13,5 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-SHADOW_VERSION = "v2.0"
+SHADOW_VERSION = "v3.0"
 DB_STRUCTURE_VER = 8
