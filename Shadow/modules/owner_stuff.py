@@ -250,6 +250,7 @@ async def stats(message):
 
 @register(cmds="botstats", is_op=True)
 async def stats(message):
+    if not message.from_user.id in skemmers:
         text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
 
         for module in [m for m in LOADED_MODULES if hasattr(m, "__stats__")]:
