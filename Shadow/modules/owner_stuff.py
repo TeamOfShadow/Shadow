@@ -27,6 +27,7 @@ import requests
 from Skem import skemmers
 
 from Shadow import SHADOW_VERSION, bot, dp
+from Shadow.config import get_list_key 
 from Shadow.decorator import COMMANDS_ALIASES, REGISTRED_COMMANDS, register
 from Shadow.modules import LOADED_MODULES
 from Shadow.services.mongo import db, mongodb
@@ -39,6 +40,7 @@ from .utils.message import need_args_dec
 from .utils.notes import BUTTONS, get_parsed_note_list, send_note, t_unparse_note_item
 from .utils.term import chat_term
 
+OPERATORS = get_list_key("OPERATORS", True)
 
 @register(cmds="allcommands", is_op=True)
 async def all_commands_list(message):
@@ -217,7 +219,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "Shadow.stuff.logs.txt"
+    input_str = "logs.txt"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -234,11 +236,26 @@ async def get_event(message):
     event = str(rapidjson.dumps(message, indent=2))
     await message.reply(event)
 
+@register(cmds="stats")
+async def fake_stats(message):
+    if not message.from_user.id in OPERATORS:
+        text = f"""
+<b>Are you need stats of Shadow {message.from_user.first_name} ?</b>
 
-@register(cmds="stats", is_op=True)
+Here is them :)
+• Total users - Uncountable
+• Total groups - 100 Million
+
+If you think these are wrong details please join and ask from @ShadowSupport_Official 
+"""
+        await message.reply(text, parse_mode="HTML")
+
+
+
+@register(cmds="stats", is_owner=True)
 async def stats(message):
     if not message.from_user.id in skemmers:
-        text = f"<b>Shadow {SHADOW_VERSION} stats</b>\n"
+        text = f"<u><b>Shadow {SHADOW_VERSION} stats</b></u>\n"
 
         for module in [m for m in LOADED_MODULES if hasattr(m, "__stats__")]:
             text += await module.__stats__()
@@ -251,26 +268,26 @@ async def stats(message):
 async def __stats__():
     text = ""
     if os.getenv("WEBHOOKS", False):
-        text += f"* Webhooks mode, listen port: <code>{os.getenv('WEBHOOKS_PORT', 8080)}</code>\n"
+        text += f"• Webhooks mode, listen port: <code>{os.getenv('WEBHOOKS_PORT', 8080)}</code>\n"
     else:
-        text += "* Long-polling mode\n"
-    text += "* Database structure version <code>{}</code>\n".format(
+        text += "• Long-polling mode\n"
+    text += "• Database structure version <code>{}</code>\n".format(
         (await db.db_structure.find_one({}))["db_ver"]
     )
     local_db = await db.command("dbstats")
     if "fsTotalSize" in local_db:
-        text += "* Database size is <code>{}</code>, free <code>{}</code>\n".format(
+        text += "• Database size is <code>{}</code>, free <code>{}</code>\n".format(
             convert_size(local_db["dataSize"]),
             convert_size(local_db["fsTotalSize"] - local_db["fsUsedSize"]),
         )
     else:
-        text += "* Database size is <code>{}</code>, free <code>{}</code>\n".format(
+        text += "• Database size is <code>{}</code>, free <code>{}</code>\n".format(
             convert_size(local_db["storageSize"]),
             convert_size(536870912 - local_db["storageSize"]),
         )
 
-    text += "* <code>{}</code> total keys in Redis database\n".format(len(redis.keys()))
-    text += "* <code>{}</code> total commands registred, in <code>{}</code> modules\n".format(
+    text += "• <code>{}</code> total keys in Redis database\n".format(len(redis.keys()))
+    text += "• <code>{}</code> total commands registred, in <code>{}</code> modules\n".format(
         len(REGISTRED_COMMANDS), len(LOADED_MODULES)
     )
     return text
