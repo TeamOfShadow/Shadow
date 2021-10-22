@@ -11,7 +11,7 @@ from Shadow.services.pyrogram import pbot
 @pbot.on_message(filters.command(["identify", "shazam"]))
 @admins_only
 async def shazamm(client, message):
-    kek = await edit_or_reply(message, "`Shazaming In Progress!`")
+    kek = await edit_or_reply(message, "Shazaming In Progress!")
     if not message.reply_to_message:
         await kek.edit("Reply To The Audio.")
         return
@@ -26,11 +26,11 @@ async def shazamm(client, message):
         xo = r.json()
     except JSONDecodeError:
         await kek.edit(
-            "`Seems Like Our Server Has Some Issues, Please Try Again Later!`"
+            "Seems Like Our Server Has Some Issues, Please Try Again Later!"
         )
         return
     if xo.get("success") is False:
-        await kek.edit("`Song Not Found IN Database. Please Try Again.`")
+        await kek.edit("Song Not Found IN Database. Please Try Again")
         os.remove(downloaded_file_name)
         return
     xoo = xo.get("response")
@@ -45,7 +45,7 @@ async def shazamm(client, message):
 <b>Song Name : </b>{title}
 <b>Song By : </b>{by}
 
-<u><b>Identified Using @Mr_Shadow_Robot - Join our support @ShadowSupport_Official</b></u>
+<u><b>Identified by @Mr_Shadow_Robot\nJoin our support @ShadowSupport_Official</b></u>
 
 <i>Powered by @TeamOfShadow</i>
 
