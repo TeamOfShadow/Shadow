@@ -25,9 +25,7 @@ async def shazamm(client, message):
     try:
         xo = r.json()
     except JSONDecodeError:
-        await kek.edit(
-            "Seems Like Our Server Has Some Issues, Please Try Again Later!"
-        )
+        await kek.edit("Seems Like Our Server Has Some Issues, Please Try Again Later!")
         return
     if xo.get("success") is False:
         await kek.edit("Song Not Found IN Database. Please Try Again")
