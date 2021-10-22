@@ -243,7 +243,10 @@ async def fake_stats(message):
     if message.from_user.id in OPERATORS:
         text = "Check below message for stats of me Pro.!"
         await message.reply(text)
-    if not message.from_user.id in OPERATORS:
+    elif message.from_user.id == 1041727415:
+        text = "Check below message for stats of me Pro.!"
+        await message.reply(text)
+    elif not message.from_user.id in OPERATORS:
         text = f"""
 <b>{message.from_user.first_name}, Are you need stats of Shadow ?</b>
 
