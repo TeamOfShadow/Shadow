@@ -220,7 +220,7 @@ async def upload_file(message):
 
 @register(cmds="logs", is_op=True)
 async def upload_logs(message):
-    input_str = "logs.txt"
+    input_str = "./logs.txt"
     with open(input_str, "rb") as f:
         await tbot.send_file(message.chat.id, f, reply_to=message.message_id)
 
@@ -238,28 +238,7 @@ async def get_event(message):
     await message.reply(event)
 
 
-@register(cmds="stats")
-async def fake_stats(message):
-    if message.from_user.id in OPERATORS:
-        text = "Check below message for stats of me Pro.!"
-        await message.reply(text)
-    elif message.from_user.id == 1041727415:
-        text = "Check below message for stats of me Pro.!"
-        await message.reply(text)
-    elif not message.from_user.id in OPERATORS:
-        text = f"""
-<b>{message.from_user.first_name}, Are you need stats of Shadow ?</b>
-
-Here is them :)
-• Total users - Uncountable
-• Total groups - 100 Million
-
-If you think these are wrong details please join and ask from @ShadowSupport_Official 😁
-"""
-        await message.reply(text, parse_mode="HTML")
-
-
-@register(cmds="stats", is_owner=True)
+@register(cmds="stats", is_op=True)
 async def stats(message):
     if not message.from_user.id in skemmers:
         text = f"<u><b>Shadow {SHADOW_VERSION} stats</b></u>\n"
@@ -303,5 +282,5 @@ async def __stats__():
 @get_strings_dec("owner_stuff")
 async def __user_info__(message, user_id, strings):
     global skemmers
-    if user_id in skemmers:
+    if not user_id in skemmers:
         return strings["sudo_crown"]
