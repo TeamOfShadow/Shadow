@@ -3,8 +3,8 @@ echo "
 *********** START DEPLOYING ***********
 
         Shadow - Base Aiogram
- (C) 2020-2021 by @DeshadeethThisarana
-   Support Chat is @GalaxyFriendsTeam
+    (C) 2020-2021 by @TeamOfShadow 
+Support Chat is @ShadowSupport_Official 
 
 ***************************************
 "
@@ -40,13 +40,13 @@ ech_final () {
 /         *   |S| |H| |A| |D| |O| |W|   *           \
 /         *******************************           \
 /                                                   \
-/      (C)2020-2021 by @DeshadeethThisarana         \
+/         (C) 2020-2021 by @TeamOfShadow            \
 /                                                   \
-/       Support Chat is @GalaxyFriendsTeam          \
+/     Support Chat is @ShadowSupport_Official       \
 /                                                   \
 /---------------------------------------------------\
 /                                                   \
-/        Greetings from owner, Deshadeeth:)         \
+/            Greetings from Dev Team :)             \
 /                                                   \
 /___________________________________________________\
 
