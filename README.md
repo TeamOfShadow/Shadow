@@ -100,9 +100,20 @@ Anything missing kindly let us know at [Shadow Updates](https://t.me/ShadowbotUp
 
 ## Contributors
 
-#### • Deshadeeth Thisarana »»  <a href="https://github.com/Deshadeeth-Thisarana" alt="Deshadeeth-Thisarana"> <img src="https://img.shields.io/badge/Deshadeeth-Thisarana-90302f?logo=github" /></a> (OWNER)
-#### • Inuka Asith »» <a href="https://github.com/InukaAsith" alt="InukaAsith"> <img src="https://img.shields.io/badge/InukaAsith-90302f?logo=github" /></a>
-#### • Prabhasha »» <a href="https://github.com/prabhasha-p" alt="prabhasha-p"> <img src="https://img.shields.io/badge/prabhasha-p-90302f?logo=github" /></a>
+### ✪ Owners
+#### • [Deshadeeth Thisarana](https://t.me/DeshadeethThisarana) » [GitHub](https://github.com/deshadeeth-thisarana) (Bot Founder)
+#### • [Inuka Asith](http://t.me/InukaASiTH) » [GitHub](http://github.com/InukaASiTH)
+#### • [Alain](https://t.me/Alain_xD) » [GitHub](https://github.com/infotechbro)
+
+### ✪ Developers
+#### • [Prabhasha](https://t.me/Prabha_sha) » [GitHub](https://github.com/Prabhasha-p)
+#### • [Damantha Jasinghe](https://t.me/Damantha_Jasinghe) » [GitHub](https://github.com/Damantha126)
+#### • [Sadew](https://t.me/DarkRIDERsslk) » [GitHub](https://github.com/Sadew451)
+#### • [Thilina](https://t.me/Thilina2003) » [GitHub](https://github.com/ThilinaWeerasekara)
+
+### ✪ Supporters
+#### • [Uvindu Bro](http://t.me/UvinduBro) » [GitHub](https://github.com/UvinduBro)
+#### • [GD Hiruna](http://t.me/hirunaofficial) » [GitHub](http://github.com/hirunaofficial)
 
 
 ## All who helped at a glance 
