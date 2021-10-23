@@ -74,7 +74,7 @@ $ python3 -m Shadow
  - [Utah](https://github.com/minatouzuki/utah).
  - [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
  
-## Special Credits
+# Special Credits
 - [DaisyX](https://github.com/teamdaisyx/daisyx)
 - [SophieBot Devs](https://gitlab.com/SophieBot)
 - [TroJanzHEX](https://github.com/TroJanzHEX)
@@ -101,19 +101,19 @@ Anything missing kindly let us know at [Shadow Updates](https://t.me/ShadowbotUp
 ## Contributors
 
 ### ✪ Owners
-#### • [Deshadeeth Thisarana](https://t.me/DeshadeethThisarana) » [GitHub](https://github.com/deshadeeth-thisarana) (Bot Founder)
-#### • [Inuka Asith](http://t.me/InukaASiTH) » [GitHub](http://github.com/InukaASiTH)
-#### • [Alain](https://t.me/Alain_xD) » [GitHub](https://github.com/infotechbro)
+- [Deshadeeth Thisarana](https://t.me/DeshadeethThisarana) » [GitHub](https://github.com/deshadeeth-thisarana) (Bot Founder)
+- [Inuka Asith](http://t.me/InukaASiTH) » [GitHub](http://github.com/InukaASiTH)
+- [Alain](https://t.me/Alain_xD) » [GitHub](https://github.com/infotechbro)
 
 ### ✪ Developers
-#### • [Prabhasha](https://t.me/Prabha_sha) » [GitHub](https://github.com/Prabhasha-p)
-#### • [Damantha Jasinghe](https://t.me/Damantha_Jasinghe) » [GitHub](https://github.com/Damantha126)
-#### • [Sadew](https://t.me/DarkRIDERsslk) » [GitHub](https://github.com/Sadew451)
-#### • [Thilina](https://t.me/Thilina2003) » [GitHub](https://github.com/ThilinaWeerasekara)
+- [Prabhasha](https://t.me/Prabha_sha) » [GitHub](https://github.com/Prabhasha-p)
+- [Damantha Jasinghe](https://t.me/Damantha_Jasinghe) » [GitHub](https://github.com/Damantha126)
+- [Sadew](https://t.me/DarkRIDERsslk) » [GitHub](https://github.com/Sadew451)
+- [Thilina](https://t.me/Thilina2003) » [GitHub](https://github.com/ThilinaWeerasekara)
 
 ### ✪ Supporters
-#### • [Uvindu Bro](http://t.me/UvinduBro) » [GitHub](https://github.com/UvinduBro)
-#### • [GD Hiruna](http://t.me/hirunaofficial) » [GitHub](http://github.com/hirunaofficial)
+- [Uvindu Bro](http://t.me/UvinduBro) » [GitHub](https://github.com/UvinduBro)
+- [GD Hiruna](http://t.me/hirunaofficial) » [GitHub](http://github.com/hirunaofficial)
 
 
 ## All who helped at a glance 
