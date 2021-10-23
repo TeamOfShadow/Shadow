@@ -28,6 +28,7 @@
 
 # ❤️ Support
 <a href="https://t.me/ShadowBotUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+
 <a href="https://t.me/ShadowSupport_Official"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 ### Self-hosting (For Devs) ⚔
