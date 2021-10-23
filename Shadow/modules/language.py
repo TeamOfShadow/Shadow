@@ -78,7 +78,7 @@ async def select_lang_keyboard(message, strings, edit=False):
 
     markup.add(
         InlineKeyboardButton(
-            strings["crowdin_btn"], url="https://t.me/ShadowBotSupport"
+            strings["crowdin_btn"], url="https://t.me/ShadowSupport_Official"
         )
     )
     if edit:
