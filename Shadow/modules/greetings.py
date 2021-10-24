@@ -1114,6 +1114,7 @@ __mod_name__ = "Greetings"
 
 __help__ = """
 <b>Available commands:</b>
+
 <b>General:</b>
 - /setwelcome or /savewelcome: Set welcome
 - /setwelcome <code>(on/off)</code>: Disable/enabled welcomes in your chat
