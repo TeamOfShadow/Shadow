@@ -32,7 +32,6 @@ async def notify_bot_owner(old_ver, new_ver):
 
 # TODO: Logs channel
 
-
 log.debug("Checking on database structure update...")
 
 if not (data := mongodb.db_structure.find_one({"db_ver": {"$exists": True}})):
