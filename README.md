@@ -9,7 +9,7 @@
 
 <p align="center"><a href="https://t.me/ShadowSupport_Official"><img src="https://telegra.ph/file/2adf03bd079a0243aafac.png" width="400"></a></p>
 <p align="center">
-    <a href="https://app.codacy.com/manual/TeamOfShadow/Shadow/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
+    <a href="https://app.codacy.com/TeamOfShadow/Shadow/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
     <a href="https://github.com/TeamOfShadow/Shadow"> <img src="https://img.shields.io/github/repo-size/TeamOfShadow/Shadow?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/TeamOfShadow/Shadow/commits/Deshadeeth-Thisarana"> <img src="https://img.shields.io/github/last-commit/TeamOfShadow/Shadow?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/TeamOfShadow/Shadow/issues"> <img src="https://img.shields.io/github/issues/TeamOfShadow/Shadow?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
