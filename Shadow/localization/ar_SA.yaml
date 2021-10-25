@@ -164,13 +164,13 @@ STRINGS:
     cant_promote_yourself: "لا يمكنك ترقية نفسك."
     emoji_not_allowed: "أنا آسف، لكن الاسماء المستعارة لا يمكن أن تحتوي على إيموجي 😞"
   pm_menu:
-    start_hi_group: 'مرحبا هناك! اسمي Shadow'
+    start_hi_group: '**Hey :) Write me in PM if you have any question about how to use me!**'
     start_hi: "أهلا! اسمي Shadow، وسأمساعدك في إدارة مجموعتك بطريقة فعالة!"
     btn_source: "📦 Source code"
     btn_help: "مساعدة ❔"
     btn_lang: "اللغة 🇷🇺"
     btn_channel: "📡 Update Channel"
-    btn_group: "👥Support Group"
+    btn_group: "👥 Support Group"
     btn_group_help: "Click me for help!"
     back: الرجوع
     #/help
@@ -181,21 +181,21 @@ STRINGS:
     disablable: "<b>الأوامر القابلة للتعطيل:</b>\n"
     #/disabled
     no_disabled_cmds: لا توجد أوامر معطلة في <b>{chatname}</b>!
-    disabled_list: "<b>الأوامر المعطلة في {chatname}:</b>\n"
+    disabled_list: "<b>الأوامر المعطلة في {chat_name}:</b>\n"
     #/disable
     wot_to_disable: "ما الذي تريد تعطيله؟"
     already_disabled: "هذا الأمر معطل بالفعل!"
-    disabled: "الأمر <code>{cmd}</code> تم تعطيله في <b>{chatname}</b>!"
+    disabled: "الأمر <code>{cmd}</code> تم تعطيله في <b>{chat_name}</b>!"
     #/enable
     wot_to_enable: "ما الذي تريد تفعيله؟"
     already_enabled: "هذا الأمر غير معطل!"
-    enabled: "تم تمكين الأمر <code>{cmd}</code> في <b>{chatname}</b>!"
+    enabled: "تم تمكين الأمر <code>{cmd}</code> في <b>{chat_name}</b>!"
     #/enableall
     not_disabled_anything: "لم يتم تعطيل أي شيء في <b>{chat_title}</b>!"
-    enable_all_text: "This will enable all commands in the <b>{chatname}</b>. Are you sure?"
+    enable_all_text: "This will enable all commands in the <b>{chat_name}</b>. Are you sure?"
     enable_all_btn_yes: "نعم. تمكين جميع الأوامر!"
     enable_all_btn_no: "لا!"
-    enable_all_done: "تم تمكين جميع الأوامر (<code>{num}</code>) في <b>{chatname}</b>!"
+    enable_all_done: "تم تمكين جميع الأوامر (<code>{num}</code>) في <b>{chat_name}</b>!"
   bot_rights:
     change_info: "ليس لدي حقوق في تغيير معلومات المجموعة، من فضلك أجعلني مشرفا بهذا الاذن."
     edit_messages: "ليس لدي الاذن في تحرير الرسائل!"
@@ -553,7 +553,7 @@ STRINGS:
   #havent_set_rules_note: "You haven't set the rules note yet."
   #success_remove_rules_note: "Successfully removed rules note in <b>{}</b>."
   greetings:
-    default_welcome: "Hey there {mention} and Welcome to {chatname}! How are you?"
+    default_welcome: "Hey there {mention}, and Welcome to {chatname}! How are you?"
     thank_for_add: "Thanks for adding me to your group! Take a look at /help and follow my news channel @ShadowBotUpdates"
     default_security_note: "Welcome {mention}! Please press button below to verify yourself as human!"
     bool_invalid_arg: حجة غير صالحة، زر <code>المتوقع</code>/<code>كلمة التحقق</code>.
