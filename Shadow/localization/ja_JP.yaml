@@ -164,7 +164,7 @@ STRINGS:
     cant_promote_yourself: "自分自身を昇進させることはできません。"
     emoji_not_allowed: "申し訳ありませんが、管理者の役割は絵文字を持つことができません。 :explosed_face:"
   pm_menu:
-    start_hi_group: 'こんにちは！私の名前はShadow'
+    start_hi_group: '<b>Hey :) Write me in PM if you have any question about how to use me!</b>'
     start_hi: "こんにちは！私の名前はShadowです。効率的な方法であなたのグループを管理するのを助けます！"
     btn_source: "📦 ソース コード"
     btn_help: "❔ ヘルプ"
