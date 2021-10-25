@@ -164,7 +164,7 @@ STRINGS:
     cant_promote_yourself: "لا يمكنك ترقية نفسك."
     emoji_not_allowed: "أنا آسف، لكن الاسماء المستعارة لا يمكن أن تحتوي على إيموجي 😞"
   pm_menu:
-    start_hi_group: '**Hey :) Write me in PM if you have any question about how to use me!**'
+    start_hi_group: '<b>Hey :) Write me in PM if you have any question about how to use me!</b>'
     start_hi: "أهلا! اسمي Shadow، وسأمساعدك في إدارة مجموعتك بطريقة فعالة!"
     btn_source: "📦 Source code"
     btn_help: "مساعدة ❔"
