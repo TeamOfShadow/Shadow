@@ -164,7 +164,7 @@ STRINGS:
     cant_promote_yourself: "Вы не можете повысить себя."
     emoji_not_allowed: "Извините, но роли администратора не могут иметь эмодзи 😞"
   pm_menu:
-    start_hi_group: 'Привет! Меня зовут Shadow'
+    start_hi_group: '<b>Hey :) Write me in PM if you have any question about how to use me!</b>'
     start_hi: "Привет! Меня зовут Shadow. Я помогу вам эффективно управлять вашей группой!"
     btn_source: "📜 Source code"
     btn_help: "❔ Помощь"
