@@ -163,7 +163,7 @@ STRINGS:
     cant_promote_yourself: "Anda tidak dapat mempromosikan diri anda sendiri."
     emoji_not_allowed: "Mohon maaf, tetapi gelar admin tidak dapat memiliki sebuah emoji 😞"
   pm_menu:
-    start_hi_group: 'Hai yang disana! Nama saya Shadow'
+    start_hi_group: '<b>Hey :) Write me in PM if you have any question about how to use me!</b>'
     start_hi: "Hai yang disana! Nama saya <b>Shadow.</b>\nSaya bisa membantu mengatur grup dengan fitur-fitur yang berguna, jangan ragu untuk menambahkan saya ke grup anda!"
     btn_source: "📜 Kode sumber"
     btn_help: "❔ Bantuan"
