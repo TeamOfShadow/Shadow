@@ -154,7 +154,7 @@ STRINGS:
     cant_get_user: "Kullanıcıyı alamadım! Eğer sakıncası varsa, lütfen mesajına cevap verin ve tekrar deneyin."
     emoji_not_allowed: "Üzgünüm, ama yönetici rollerinde emoji olamaz 😞"
   pm_menu:
-    start_hi_group: 'Selam! Benim adım Shadow'
+    start_hi_group: '<b>Hey :) Write me in PM if you have any question about how to use me!</b>'
     start_hi: "Selam! Adım Shadow, grubunuzu verimli bir şekilde yönetmenize yardım ediyorum!"
     btn_source: "📦 Code source"
     btn_help: "❔ Yardım"
