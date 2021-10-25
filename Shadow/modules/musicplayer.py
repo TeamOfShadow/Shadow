@@ -22,64 +22,60 @@ __help__ = """
             
 <i>Assistant name »</i> <b>@Shadow_Helper</b>
 
-<b>•Groups and channels Voice Chat Music Play 🎧</b>
+<b>• Groups Voice Chat Music Play 🎧</b>
   
-==》 <b>♾Settings up♾</b>
-
-╔🟡For Group Music Play🟡 
+==》<b>♾Settings up♾</b>
 ╠ Make <b>@Mr_Shadow_Robot</b> admin
 ╠ Start a voice chat
 ╠ Try /play <code>[song name]</code> for the first time by an admin
 ╚ If userbot joined enjoy music, If not add <b>@Shadow_Helper</b> to your group and retry
 
-╔🟡For Channel Music Play🟡 
-╠ Make <b>@Mr_Shadow_Robot</b> admin of your channel 
-╠ Send /userbotjoinchannel in linked group
-╚ Now send commands in linked group 
+==》<b>Commands⚒</b>
+🎧 [Basic Commands]
+╠ /play <code>(song name)</code> - play song from youtube
+╠ /ytp <code>(song name)</code> - play song directly from youtube 
+╠ /stream <code>(reply to audio)</code> - play song using audio file
+╠ /playlist - show the list song in queue
+╠ /song <code>(song name)</code> - download song from youtube
+╠ /search <code>(video name)</code> - search video from youtube detailed
+╠ /video <code>(video name)</code> - download video from youtube detailed
+╚ /lyric <code>(song name)</code> - lyrics scrapper
 
-==》 <b>Commands⚒</b>
+🎧 [Advanced Commands]
+╠ /reload - reload bot and refresh the admin list
+╠ /ping - check the bot ping status
+╠ /uptime - check the bot uptime status
+╚ /id - show the group/user id & other
 
-╔🟡For Group Music Play🟡 
-╠ /play <code>[song name]</code>: Play song using youtube music
-╠ /play <code>[yt url]</code>: Play the given yt url
-╠ /dplay <code>[song name]</code>: Play song via deezer
-╠ /splay <code>[song name]</code>: Play song via jio saavn
-╠ /player: Open Settings menu of player
-╠ /skip: Skips the current track
-╠ /pause: Pause track
-╠ /resume: Resumes the paused track
-╠ /end: Stops media playback
-╠ /current: Shows the current Playing track
-╚ /playlist: Shows playlist
+🎧 [Admin Commands]
+╠ /player - show the music playing status
+╠ /pause - pause the music streaming
+╠ /resume - resume the music was paused
+╠ /skip - skip to the next song
+╠ /end - stop music streaming
+╠ /join - invite userbot join to your group
+╠ /leave - order the userbot to leave your group
+╠ /auth - authorized user for using music bot
+╠ /unauth - unauthorized for using music bot
+╠ /control - open the player settings panel
+╠ /delcmd <code>(on|off)</code> - enable / disable del cmd feature
+╚ /music <code>(on/off)</code> - disable / enable music player in your group
 
-<i>All other group commands except /play, /current, /player and /playlist are only for admins of the group</i>
+🎧 [Sudo Commands]
+╠ /leaveall - order the assistant to leave from all group
+╠ /stats - show the bot statistic
+╠ /rmd - remove all downloaded files
+╠ /eval <code>(query)</code> - execute code
+╚ /sh <code>(query)</code> - run code
 
-╔🟡For Channel Music Play🟡 
-╠ /cplay <code>[song name]</code>: play song you requested
-╠ /cdplay <code>[song name]</code>: play song you requested via deezer
-╠ /csplay <code>[song name]</code>: play song you requested via jio saavn
-╠ /cplaylist: Show now playing list
-╠ /ccurrent: Show now playing
-╠ /cplayer: Open music player settings panel
-╠ /cpause: pause song play
-╠ /cresume: resume song play
-╠ /cskip: play next song
-╚ /cend: stop music play
+🎧 [Owner Commands]
+╠ /stats - show the bot statistic
+╠ /broadcast <code>(reply to message)</code> - send a broadcast message from bot
+╠ /block <code>(user id - duration - reason)</code> - block user for using your bot
+╠ /unblock <code>(user id - reason)</code> - unblock user you blocked for using your bot
+╚ /blocklist - show you the list of user was blocked for using your bot
 
-<i>All channel commands are only for linked group admins only</i>
-
-⚠️ Note: <code>channel</code> can also be used instead of <code>c</code> in commands 
- eg:-<code>/cplay</code> = <code>/channelplay</code>
-
-==》 <b>More tools 🧑‍🔧</b>
-
-╔🟡For Groups🟡 
-╠ /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-╠ /userbotjoin: Invite <b>@Shadow_Helper</b> Userbot to your group
-╚ /userbotleave: Userbot leaves from your group
-
-╔🟡For Channels🟡
-╚ /userbotjoinchannel: Invite <b>@Shadow_Helper</b> Userbot to your channel
+📝 Note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
 
 <b>⭕️PLEASE NOTE THIS SERVICE IS UNSTABLE AND CAN BE STOPPED ANYTIME⭕️</b>
 """
