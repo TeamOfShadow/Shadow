@@ -38,5 +38,5 @@ client = TelegramClient(StringSession(), APP_ID, API_HASH)
 with client:
     session_str = client.session.save()
     client.send_message(f"`{session_str}`")
-    client.send_message(text)
+    client.reply_text(text)
     print("⬆ Please Check Your Telegram Saved Message For Your String.")
