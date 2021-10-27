@@ -109,7 +109,7 @@ Anything missing kindly let us know at [Shadow Updates](https://t.me/ShadowbotUp
 ### ✪ Developers
 - [Prabhasha](https://t.me/Prabha_sha) » [GitHub](https://github.com/Prabhasha-p)
 - [Damantha Jasinghe](https://t.me/MrItzMe) » [GitHub](https://github.com/Damantha126)
-- [Sadew](https://t.me/DarkRIDERsslk) » [GitHub](https://github.com/Sadew451)
+- [Sadew](https://t.me/SADEW_JA) » [GitHub](https://github.com/Sadew451)
 - [Thilina](https://t.me/Thilina2003) » [GitHub](https://github.com/ThilinaWeerasekara)
 
 ### ✪ Supporters
