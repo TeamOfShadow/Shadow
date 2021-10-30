@@ -55,8 +55,8 @@ else:
             new_ver = curr_ver + 1
             log.info(f"Trying update to {str(new_ver)}...")
 
-            log.debug("Importing: DaisyX.db." + str(new_ver))
-            import_module("DaisyX.db." + str(new_ver))
+            log.debug("Importing: Shadow.db." + str(new_ver))
+            import_module("Shadow.db." + str(new_ver))
 
             curr_ver += 1
             mongodb.db_structure.update_one(
