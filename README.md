@@ -124,4 +124,5 @@ Anything missing kindly let us know at [Shadow Updates](https://t.me/ShadowbotUp
 [![Supportors](https://contrib.rocks/image?repo=Deshadeeth-Thisarana/Shadow-Old)](https://github.com/TeamOfShadow/Shadow/graphs/contributors)
 
 > And credits goes to all who supported, all who helped and API & environmental equirement package devs and all projects helped in making this project.
+
 > Special thanks to you for using bot
