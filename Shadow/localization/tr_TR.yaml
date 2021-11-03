@@ -161,7 +161,7 @@ STRINGS:
     btn_lang: "🇹🇷 Dil"
     btn_group: "👥 Shadow Grubu"
     btn_channel: "📡 Shadow Kanalı"
-    back: Geri
+    back: "« Bᴀᴄᴋ"
     #/help
     help_header: Hey! check help here
     click_btn: Buraya tıklayın
