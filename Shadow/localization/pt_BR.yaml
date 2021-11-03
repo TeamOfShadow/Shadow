@@ -169,9 +169,9 @@ STRINGS:
     btn_help: "❔ Ajuda"
     btn_lang: "🇧🇷 Idioma"
     btn_channel: "🙋‍♀️ Notícias do Shadow"
-    btn_group: "👥 Daisy Support"
+    btn_group: "👥 Shadow Support"
     btn_group_help: "Clique aqui para obter ajuda!"
-    back: Voltar
+    back: "« Bᴀᴄᴋ"
     #/help
     help_header: "Ei! Meu nome é <b>Shadow</b>. Sou um bot de gerenciamento de grupo, estou aqui para ajudá-lo a se locomover e manter a ordem em seus grupos!\nTenho muitos recursos úteis, como controle de flood, um sistema de avisos, um sistema de notas e até mesmo respostas predeterminadas em certas palavras-chave."
     click_btn: Clique aqui
