@@ -149,7 +149,7 @@ async def helpmenu_callback(query, callback_data=None, **kwargs):
     msg = f"Help for <b>{mod}</b> module:\n"
     msg += f"{MOD_HELP[mod]}"
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text="🔙Back", callback_data="get_help")
+        InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="get_help")
     )
     with suppress(MessageNotModified):
         await query.message.edit_text(
