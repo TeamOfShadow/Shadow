@@ -172,7 +172,7 @@ STRINGS:
     btn_channel: "📡 Update Channel"
     btn_group: "👥 Support Group"
     btn_group_help: "Click me for help!"
-    back: الرجوع
+    back: "« Bᴀᴄᴋ"
     #/help
     help_header: "مرحبًا ، أنا *Shadow*! انقر فوق الأزرار أدناه لمعرفة المزيد عني"
     click_btn: اضغط هنا
