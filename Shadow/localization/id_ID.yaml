@@ -171,7 +171,7 @@ STRINGS:
     btn_channel: "🙋‍♀️ News Channel"
     btn_group: "👥 Support Group"
     btn_group_help: "Tekan saya untuk mendapatkan bantuan!"
-    back: Kembali
+    back: "« Bᴀᴄᴋ"
     #/help
     help_header: "Hai! Nama saya <b>Shadow</b>. Saya adalah seorang bot manajemen grup, disini untuk membantu anda menjaga ketertiban dalam grup anda! Saya memiliki banyak fitur berguna, seperti pengendalian pesan banjir, sistem peringatan, sistem catatan, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
     click_btn: Tekan disini
