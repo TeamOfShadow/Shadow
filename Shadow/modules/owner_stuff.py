@@ -286,9 +286,9 @@ async def __user_info__(message, user_id, strings):
         return strings["sudo_crown"]
     
  
-__mod_name__ = "Devs"
+_mod_name_ = "Devs"
 
-__help__ = """
+_help_ = """
 <b>⚠️ Notice:</b>
 Commands listed here only work for users with special access are mainly used for troubleshooting, debugging purposes.
 Group admins/group owners do not need these commands. 
