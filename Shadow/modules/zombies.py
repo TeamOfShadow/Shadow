@@ -22,6 +22,7 @@ from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
+from telethon.tl import types
 
 from Shadow import OWNER_ID
 from Shadow.services.telethon import tbot as client
