@@ -5,7 +5,7 @@ from time import time
 
 import aiohttp
 from aiohttp import ClientSession
-from googletrans import Translator
+from google_trans_new import google_translator as Translator
 from motor import version as mongover
 from pykeyboard import InlineKeyboard
 from pyrogram import __version__ as pyrover
@@ -28,7 +28,7 @@ from Shadow.services.pyrogram import pbot
 ARQ_API = get_str_key("ARQ_API", required=True)
 ARQ_API_KEY = ARQ_API
 SUDOERS = OWNER_ID
-ARQ_API_URL = "https://grambuilders.tech"
+ARQ_API_URL = "https://thearq.tech"
 
 # Aiohttp Client
 print("[INFO]: INITIALZING AIOHTTP SESSION")
