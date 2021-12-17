@@ -20,7 +20,7 @@ import re
 import aiohttp
 import emoji
 from pyrogram import filters
-from googletrans import Translator as google_translator
+from google_trans_new import google_translator
 
 from Shadow import BOT_ID
 from Shadow.db.mongo_helpers.aichat import add_chat, get_session, remove_chat
