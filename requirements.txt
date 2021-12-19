@@ -1,12 +1,12 @@
 # General
 telethon
-pyrogram>=1.0.7
+pyrogram
 aiogram
 
 # DBs
 redis
 aioredis # Redis memery storage from aiogram
-pymongo
+pymongo==3.12.1
 motor
 sqlalchemy==1.3.20 # For old modules
 dnspython # needed to connect to cloud MongoDB instances
