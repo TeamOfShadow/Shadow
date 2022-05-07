@@ -1,6 +1,6 @@
 # General
 telethon
-pyrogram
+pyrogram==1.4.16
 aiogram
 
 # DBs
@@ -56,7 +56,8 @@ dateparser
 twistdl
 
 #Pyrogram
-tgCrypto>=1.2.2
+tgcrypto
+uvloop
 
 #Old DB Processes
 psycopg2-binary==2.8.6
